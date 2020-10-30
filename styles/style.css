@@ -392,6 +392,18 @@ h4 {
 
 .nav {
   padding: 23px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.nav.white {
+  background-color: white;
+  -webkit-box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.32);
 }
 
 .nav .wrapper {
@@ -442,7 +454,7 @@ h4 {
 }
 
 .nav__menu .nav__links {
-  padding: 20px 0 70px;
+  padding: 20px 0 30px;
 }
 
 .nav__menu .nav__links li {
@@ -453,7 +465,7 @@ h4 {
 }
 
 .nav__menu article:first-of-type {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .nav__menu article h4 {
@@ -476,7 +488,7 @@ button .button--ham {
 }
 
 .header__title {
-  padding-top: 25vh;
+  padding-top: 40vh;
   text-align: center;
   color: #ffffff;
 }
@@ -955,6 +967,7 @@ button .button--ham {
 
 .contact__form .contact__wrap input:focus {
   border-bottom-color: #0086DD;
+  outline: none;
 }
 
 .contact__form .contact__wrap input:last-of-type {
@@ -1053,8 +1066,71 @@ button .button--ham {
   .wrapper {
     width: 80%;
   }
+  .nav .wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav .logo {
+    margin-right: 100px;
+  }
+  .nav--mobile {
+    display: none;
+  }
+  .nav__menu {
+    display: block;
+    position: static;
+    padding: 0;
+    height: auto;
+    z-index: auto;
+    background-color: transparent;
+  }
+  .nav__menu .logo, .nav__menu article {
+    display: none;
+  }
+  .nav__menu button {
+    display: none;
+    visibility: hidden;
+  }
+  .nav__menu .nav__links {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav__menu .nav__links li {
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+    padding-right: 30px;
+  }
+  .nav__menu .nav__links.scrollin li {
+    color: #090B0D;
+  }
+  .nav__menu .nav__links.scrollin li.activePage, .nav__menu .nav__links li.activePage {
+    color: #0086DD;
+    text-decoration: underline;
+  }
+  .nav__menu .nav__links.scrollin li.activePage:hover, .nav__menu .nav__links.scrollin li.activePage:focus, .nav__menu .nav__links li.activePage:hover, .nav__menu .nav__links li.activePage:focus {
+    color: #090B0D;
+    text-decoration: none;
+  }
+  .header__title {
+    padding-top: 40vh;
+  }
   .header__title .h1--main {
-    padding-bottom: 300px;
+    padding-bottom: 30vh;
+  }
+  .header__title .h1--home {
+    font-size: 3rem;
+    max-width: 700px;
+    margin: 0 auto 20px;
   }
   .services {
     top: -120px;
@@ -1124,7 +1200,7 @@ button .button--ham {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 85%;
+    width: 90%;
   }
   .callout.callout--left {
     -webkit-box-orient: horizontal;
@@ -1137,15 +1213,15 @@ button .button--ham {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-left: 15%;
+    margin-left: 10%;
   }
   .callout .callout__image {
-    width: 50%;
+    width: 40%;
     height: auto;
   }
   .callout .callout__content {
-    padding: 120px 50px 120px 140px;
-    width: 50%;
+    padding: 120px 50px 120px 180px;
+    width: 60%;
   }
   .callout h2 {
     max-width: 300px;
@@ -1187,7 +1263,7 @@ button .button--ham {
     width: 40%;
   }
   .intro .wrapper p {
-    width: 50%;
+    width: 40%;
   }
   .projects__list ul {
     -webkit-box-orient: horizontal;
@@ -1365,5 +1441,50 @@ button .button--ham {
   }
   .footer__social ul li, .footer__social h4 {
     text-align: right;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav .logo {
+    margin-right: 150px;
+  }
+  .button--call {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 170px;
+    text-align: center;
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    background-color: #0086DD;
+    padding: 20px 30px 10px;
+  }
+  .button--call.scrollin {
+    top: 14px;
+  }
+  .button--call.scrollin p:first-child {
+    display: none;
+  }
+  .nav__menu .nav__links.scrollin li {
+    color: #090B0D;
+  }
+  .nav__menu .nav__links.scrollin li.activePage {
+    color: #0086DD;
+    text-decoration: underline;
+  }
+  .nav__menu .nav__links.scrollin li.activePage:hover, .nav__menu .nav__links.scrollin li.activePage:focus {
+    color: #090B0D;
+    text-decoration: none;
+  }
+  .header__title .h1--main {
+    padding-bottom: 35vh;
+  }
+  .additional h2 {
+    font-size: 3.2rem;
+  }
+  .testimonials h2 {
+    max-width: 350px;
   }
 }

@@ -70,7 +70,7 @@ h4{
 // link styles
 .link--blue{
     @include font(700);
-    color: #0086DD;
+    color: $primary;
     text-decoration: underline;
     text-transform: capitalize;
 

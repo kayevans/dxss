@@ -62,6 +62,16 @@
 // nav styles
 .nav{
     padding: 23px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    transition: background 0.5s ease;
+
+    &.white{
+        background-color: white;
+        box-shadow: 0 2px 6px 1px rgba(0,0,0,0.32);
+    }
 
     .wrapper{
         display: flex;
@@ -121,7 +131,7 @@
 
     // links styles
     .nav__links{
-        padding: 20px 0 70px;
+        padding: 20px 0 30px;
 
         li{
             font-size: 3rem;
@@ -134,7 +144,7 @@
     article{
 
         &:first-of-type{
-            padding-bottom: 50px;
+            padding-bottom: 30px;
         }
         
         h4{
@@ -184,7 +194,7 @@ button .button--ham{
 
 // nav title styles
 .header__title{
-    padding-top: 25vh;
+    padding-top: 40vh;
     text-align: center;
     color: $fontWhite;
 
