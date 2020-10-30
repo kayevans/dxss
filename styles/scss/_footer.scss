@@ -1,0 +1,56 @@
+// footer styles
+
+// footer address styles
+.footer__address{
+    padding: 70px 0;
+    background-image: url('../assets/06c1be1bf79a2174802c8c51d7e60422.png'), linear-gradient(to bottom, $primary, $primary);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    address{
+        font-style: normal;
+    }
+
+    h4{
+        padding-bottom: 14px;
+    }
+
+    p, address{
+        color: $fontWhite;
+        @include font(700);
+        font-size: 1.6rem;
+        
+    }
+
+    .footer__email{
+        text-decoration: underline;
+    }
+
+    .footer__subtitle{
+        font-size: 2rem;
+        padding-bottom: 74px;
+    }
+    
+    article:first-of-type{
+        padding-bottom: 55px;
+    }
+
+    
+}
+
+
+// footer social styles
+.footer__social{
+    padding: 70px 0;
+    background-color: $primary;
+
+    h4{
+        padding-bottom: 10px;
+    }
+    a{
+        font-weight: 700;
+        color: $fontWhite;
+        font-size: 2rem;
+    }
+    
+}

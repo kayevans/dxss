@@ -1,0 +1,217 @@
+.header--home,
+.header--main{
+    height: 100vh;
+}
+
+// contact header
+.contact-page .header--main{
+    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/drew-beamer-Se7vVKzYxTI-unsplash.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// team header
+.team-page .header--main{
+    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image000011.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// projects header
+.projects-page .header--main{
+    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image00005.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// services header
+.services-page .header--main{
+    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image00004.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// main styles for header
+.header--home{
+    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image00001.png');
+    background-position: 30% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    // border-bottom: 40px solid $primary;
+    &::after{
+        content: '';
+        height: 50px;
+        width: 100%;
+        background-color: $primary;
+        position: absolute;
+        bottom: -50px;
+    }
+}
+
+// hide the call button on desktop
+.button--call{
+    display: none;
+}
+
+// nav styles
+.nav{
+    padding: 23px 0;
+
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo{
+        display: inline-block;
+        width: 170px;
+    }
+}
+
+// make menu none by default
+.nav__menu{
+    display: none;
+    padding: 0 12.5%;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $bgDark;
+    color: $fontWhite;
+
+    &.open{
+        display: block;
+    }
+    
+    // button{
+    //     height: 100px;
+    //     width: 100px;
+    // }
+
+    button .button--cross{
+        position: absolute;
+        z-index: 20;
+        top: 23px;
+        right: 12.5%;
+        padding: 10px;
+        // span{
+        //     display: block;
+        //     background-color: $fontBlue;
+        //     height: 4px;
+        //     width: 100%;
+        //     transform: rotate(45deg);
+        // }
+    }
+
+    .logo{
+        // position: absolute;
+        // top: 23px;
+        // left: 10%;
+        padding: 23px 0;
+    }
+
+    // links styles
+    .nav__links{
+        padding: 20px 0 70px;
+
+        li{
+            font-size: 3rem;
+            margin-bottom: 20px;
+            @include font(700);
+        }
+    }
+
+    // sections of the nav links
+    article{
+
+        &:first-of-type{
+            padding-bottom: 50px;
+        }
+        
+        h4{
+            margin-bottom: 15px;
+            color: $fontBlue;
+        }
+
+        .email{
+            text-decoration: underline;
+        }
+
+        p, address{
+            @include font(700);
+            font-style: normal;
+        }
+    }
+    
+}
+
+// hamburger styles
+button .button--ham{
+    padding: 10px;
+}
+// .nav--mobile{
+//     // position: fixed;
+//     // z-index: 20;
+//     // top: 23px;
+//     // right: 10%;
+
+//     // .button--ham{
+//     //     // padding: 10px;
+
+//     //     // span{
+//     //     //     display: block;
+//     //     //     line-height: 0;
+//     //     //     height: 2px;
+//     //     //     width: 18px;
+//     //     //     background-color: white;
+//     //     //     margin-bottom: 3px;
+
+//     //     //     &:last-of-type{
+//     //     //         margin-bottom: 0;
+//     //     //     }
+//     //     // }
+//     // }
+// }
+
+// nav title styles
+.header__title{
+    padding-top: 25vh;
+    text-align: center;
+    color: $fontWhite;
+
+    // title on home page
+    .h1--home{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        line-height: 1.85;
+    }
+
+    // titles on other pages
+    .h1--main{
+        font-size: 5rem;
+        line-height: 1.54;
+        padding-bottom: 175px;
+    }
+
+    // scrolling element
+    .scroll{
+        img{
+            margin: 0 auto;
+        }
+
+        p{
+            text-transform: lowercase;
+            font-size: 1.2rem;
+            padding-top: 10px;
+        }
+    }
+}

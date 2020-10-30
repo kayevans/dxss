@@ -1,0 +1,96 @@
+// contact page styles
+.contact__form{
+    padding: 70px 0;
+
+    h2{
+        font-size: 3rem;
+        line-height: 1.36;
+        margin-bottom: 30px;
+    }
+
+    span{
+        color: $fontBlue;
+    }
+
+    p{
+        font-size: 1.2rem;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+
+    .contact__wrap{
+        display: flex;
+        flex-direction: column;
+
+
+        input{
+            margin-bottom: 52px;
+            border: none;
+            border-bottom: 2px solid #D8D8D8;
+            padding: 10px 0;
+    
+            &::placeholder{
+                @include font(500);
+                font-size: 2rem;
+                opacity: 0.4;
+            }
+
+            &:focus{
+                border-bottom-color: $primary;
+            }
+        }
+    
+        input:last-of-type{
+            margin-bottom: 20px;
+        }
+    
+        input[type="text"],
+        input[type="email"]{
+            @include font(500);
+            font-size: 2rem;
+        }
+
+    }
+
+
+    
+}
+
+// contact info container
+.contact__info{
+
+    h4{
+        margin-bottom: 20px;
+    }
+}
+
+
+// contact information
+.contact__contact{
+    padding-bottom: 37px;
+
+    .contact__number{
+        margin-bottom: 20px;
+    }
+
+    .contact__indv{
+        margin-bottom: 20px;
+
+        p{
+            margin-bottom: 10px;
+        }
+
+        .link--blue{
+            text-transform: lowercase;
+        }
+    }
+}
+
+// location and hours
+.contact__location{
+    .contact__address address{
+        font-style: normal;
+        line-height: 2.14;
+        margin-bottom: 20px;
+    }
+}

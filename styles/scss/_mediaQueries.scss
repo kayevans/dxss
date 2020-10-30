@@ -1,0 +1,323 @@
+// media queries for the site
+@media screen and (min-width: 1000px){
+
+        //      GENERAL STYLES
+        .wrapper{
+            width: 80%;
+        }
+
+        //     HEADER STYLES
+        // main header
+        .header__title{
+            .h1--main{
+                padding-bottom: 300px;
+            }
+        }
+
+        // HOME PAGE
+
+        // service cards
+        .services{
+            top: -120px;
+            // remove space left from being positioned relative
+            margin-bottom: -120px;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                // flex-wrap: wrap;
+                li{
+                    width: calc(100%/3);
+                }
+                li:nth-child(2){
+                    margin: 0 20px;
+                }
+            }
+        }
+
+        // card styles, add border
+        .card{
+            border-bottom: 10px solid transparent;
+            &:hover{
+                box-shadow: $boxShadow;
+                border-bottom: 10px solid $fontBlue;
+            }
+            .card__content{
+                padding: 30px 24px;
+
+                h3{
+                    max-width: 220px;
+                    margin: 0 auto 20px;
+                }
+            }
+        }
+
+        // MAIN CONTENT AREAS
+        .content{
+            // split top content
+            .content__intro{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+            }
+            .content__title{
+                width: 40%;
+            }
+
+            .content__mainp{
+                width: 50%;
+            }
+
+            .content__services{
+                ul{
+                    columns: 2;
+                    column-gap: 40px;
+                }
+
+                li{
+                    margin-bottom: 15px;
+                }
+
+            }
+        }
+
+        // CALLOUTS
+        .callout{
+            display: flex;
+            width: 85%;
+
+            &.callout--left{
+                flex-direction: row-reverse;
+            }
+
+            &.callout--right{
+                flex-direction: row;
+                margin-left: 15%;
+
+            }
+
+            .callout__image{
+                width: 50%;
+                height: auto;
+            }
+
+            .callout__content{
+                padding: 120px 50px 120px 140px;
+                width: 50%;
+            }
+
+            h2{
+                max-width: 300px;
+            }
+        }
+
+        .callout.callout--right::after{
+            content: '';
+            height: 100%;
+            width: 40px;
+            background-color: $primary;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .callout.callout--left::after{
+            content: '';
+            height: 100%;
+            width: 40px;
+            background-color: $primary;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .callout.callout--right .callout__content{
+            padding: 120px 100px;
+        }
+
+        // INTRO
+        .intro .wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            h2{
+                width: 40%;
+            }
+
+            p{
+                width: 50%;
+            }
+        }
+
+        // PROJECTS PAGE
+        .projects__list{
+            ul{
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                li{
+                    width: calc(100%/3 - 20px);
+                    margin-right: 20px;
+                }
+
+                li:nth-of-type(3){
+                    margin-right: 0;
+                }
+            }
+
+            .projects__project button{
+                height: 380px;
+            }
+        }
+
+        .text__twoCol{
+            .wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                
+            }
+
+            .content__list:first-of-type{
+                width: 60%;
+
+                ul{
+                    columns: 2;
+                    column-gap: 10px;
+                }
+                
+            }
+
+            .content__list:last-of-type{
+                width: 30%;
+            }
+
+            
+        }
+
+        // TEAM PAGE
+        .team__members{
+        
+            .wrapper{
+                width: 70%;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .team__member{
+                width: 40%;
+            }
+        }
+
+        // ADDITIONAL AREAS 
+
+        .additional .wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .logos{
+            margin-top: 0;
+            width: 50%;
+            ul{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .testimonials{
+            width: 40%;
+        }
+
+        // CONTACT US STYLES
+        .contact__content{
+            .wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .contact__form{
+            width: 70%;
+
+            .contact__wrap{
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .contact__wrap input:last-of-type{
+                margin-bottom: 52px;
+            }
+
+            input{
+                width: 48%;
+            }
+
+            h2{
+                margin-bottom: 70px;
+            }
+        }
+
+        .contact__info{
+            width: 20%;
+            padding: 70px 0;
+        }
+
+
+        // FOOTER STYLES
+        .footer{
+            display: flex;
+            flex-direction: row;
+        }
+
+        // pos the bottom two sections
+        .footer__bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+            article{
+                width: 30%;
+                margin-right: 40px;
+            }
+
+            p, address{
+                font-size: 1.2rem;
+            }
+        }
+
+        .footer__address{
+            width: 70%;
+
+            .footer__subtitle{
+                max-width: 400px;
+            }
+            article:first-of-type{
+                padding-bottom: 0px;
+            }
+        }
+        // make it go bottom right
+        .footer__social{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            .wrapper{
+                margin: 0;
+                margin-right: 20%;
+            }
+
+            ul li, h4{
+                text-align: right;
+            }
+            
+        }
+
+}

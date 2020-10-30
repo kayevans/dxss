@@ -1,0 +1,43 @@
+// styles specific to components on homepage
+
+// services section
+.services{
+    text-align: center;
+    position: relative;
+    top: -140px;
+    // remove space left from being positioned relative
+    margin-bottom: -140px;
+
+    h2{
+        margin-bottom: 18px;
+    }
+}
+
+// card styles
+.card{
+    margin-bottom: 50px;
+    transition: all 0.5s ease;
+
+    // hover effects
+    &:hover{
+        box-shadow: $boxShadow;
+    }
+
+    .card__image, img{
+        width: 100%;
+    }
+
+    .card__content{
+        padding: 30px 40px;
+        background-color: $bgLight;
+
+        h3{
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p{
+            margin-bottom: 15px;
+        }
+    }
+}

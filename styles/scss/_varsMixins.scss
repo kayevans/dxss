@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+// variables
+
+// fonts
+$mainFont: 'Spartan', sans-serif;
+
+// colours
+$fontMain: #090B0D;
+$fontWhite: #ffffff;
+$fontBlue: #0171BA;
+$primary: #0086DD;
+$secondary: #00192A;
+$bgLight: #F1F1F1;
+$bgDark: #161A1E;
+
+// shadow
+$boxShadow: 0 7px 8px -4px rgba(0,0,0,0.20), 0 12px 17px 2px rgba(0,0,0,0.14);
+
+
+// mixins
+@mixin font($weight) {
+    font-family: $mainFont;
+    font-weight: $weight;
+}
