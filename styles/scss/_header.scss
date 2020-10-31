@@ -92,6 +92,7 @@
     position: fixed;
     z-index: 10;
     height: 100vh;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -131,7 +132,7 @@
 
     // links styles
     .nav__links{
-        padding: 20px 0 30px;
+        padding: 20px 0 10px;
 
         li{
             font-size: 3rem;
@@ -194,7 +195,7 @@ button .button--ham{
 
 // nav title styles
 .header__title{
-    padding-top: 40vh;
+    padding-top: 30vh;
     text-align: center;
     color: $fontWhite;
 
