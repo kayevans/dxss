@@ -430,6 +430,7 @@ h4 {
   position: fixed;
   z-index: 10;
   height: 100vh;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
@@ -454,7 +455,7 @@ h4 {
 }
 
 .nav__menu .nav__links {
-  padding: 20px 0 30px;
+  padding: 20px 0 10px;
 }
 
 .nav__menu .nav__links li {
@@ -488,7 +489,7 @@ button .button--ham {
 }
 
 .header__title {
-  padding-top: 40vh;
+  padding-top: 30vh;
   text-align: center;
   color: #ffffff;
 }
