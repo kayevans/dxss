@@ -455,11 +455,11 @@ h4 {
 }
 
 .nav__menu .nav__links {
-  padding: 20px 0 10px;
+  padding: 10px 0;
 }
 
 .nav__menu .nav__links li {
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 20px;
   font-family: "Spartan", sans-serif;
   font-weight: 700;
