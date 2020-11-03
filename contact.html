@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- ANIMATE ON SCROLL CSS LIB -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- styles -->
     <link rel="stylesheet" href="./styles/style.css">
     <title>Contact Us | DX Systems Solutions Inc.</title>
@@ -86,31 +88,42 @@
 
     <!-- main begins -->
     <main>
-        <section class="contact__content">
+        <section class="contact__content" data-aos="fade-up" data-aos-duration="1000">
         <!-- wrapper begins -->
-        <div class="wrapper">
-
+        <div class="wrapper" >
             <section class="contact__form">
                 <h2>Get a <span>free</span> quote</h2>
                 <form action="POST">
                     <div class="contact__wrap">
-                        <label class="sr-only" for="name">Full name</label>
-                        <input type="text" name="fullname" id="name" required placeholder="Fullname">
-        
-                        <label class="sr-only" for="email">Email</label>
-                        <input type="email" name="email" id="email" required placeholder="Email">
-        
-                        <label class="sr-only" for="phone">Phone</label>
-                        <input type="text" name="phone" id="phone" placeholder="Phone">
-        
-                        <label class="sr-only" for="address">Address</label>
-                        <input type="text" name="address" id="address" placeholder="Address">
-        
-                        <label class="sr-only" for="service">Service required</label>
-                        <input type="text" name="service" id="service" placeholder="Service required">
-        
-                        <label class="sr-only" for="message">How can we help?</label>
-                        <input type="text" name="service" id="service" required placeholder="How can we help?">
+                        <div class="input__wrapper">
+                            <input type="text" name="fullname" id="name" required placeholder="Fullname">
+                            <label for="name">Full name</label>
+                        </div>
+                        
+                        <div class="input__wrapper">
+                            <input type="email" name="email" id="email" required placeholder="Email">
+                            <label for="email">Email</label>
+                        </div>
+                        
+                        <div class="input__wrapper">
+                            <input type="text" name="phone" id="phone" placeholder="Phone">
+                            <label for="phone">Phone</label>
+                        </div>
+                        
+                        <div class="input__wrapper">
+                            <input type="text" name="address" id="address" placeholder="Address">
+                            <label for="address">Address</label>
+                        </div>
+                        
+                        <div class="input__wrapper"> 
+                            <input type="text" name="service" id="service" placeholder="Service required">
+                            <label for="service">Service required</label>
+                        </div>
+                        
+                        <div class="input__wrapper"> 
+                            <input type="text" name="service" id="service" required placeholder="How can we help?">
+                            <label for="message">How can we help?</label>
+                        </div>
                     </div>
     
                     <p>By submiting this form I consent to have my data collected in order to process this request. For more info please consult our privacy policy</p>
@@ -156,7 +169,7 @@
         <!-- wrapper ends -->
         </section>
 
-        <article class="callout callout--left">
+        <article class="callout callout--left" data-aos="fade-right" data-aos-duration="1000">
             <div class="callout__image">
                 <!-- <img src="./assets/image00002.png" alt="Person working at desk"> -->
             </div>
@@ -217,6 +230,8 @@
 
     <!-- jquery -->
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <!-- ANIMATE ON SCROLL JS LIB -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- my js -->
     <script src="./scripts.js"></script>
 </body>

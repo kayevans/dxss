@@ -931,11 +931,28 @@ button .button--ham {
           flex-direction: column;
 }
 
+.contact__form .contact__wrap .input__wrapper {
+  position: relative;
+}
+
+.contact__form .contact__wrap label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  opacity: 0;
+  color: #090b0d7a;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .contact__form .contact__wrap input {
   margin-bottom: 52px;
   border: none;
   border-bottom: 2px solid #D8D8D8;
   padding: 10px 0;
+  width: 100%;
 }
 
 .contact__form .contact__wrap input::-webkit-input-placeholder {
@@ -971,8 +988,8 @@ button .button--ham {
   outline: none;
 }
 
-.contact__form .contact__wrap input:last-of-type {
-  margin-bottom: 20px;
+.contact__form .contact__wrap input:focus + label {
+  opacity: 1;
 }
 
 .contact__form .contact__wrap input[type="text"],
@@ -1283,6 +1300,14 @@ button .button--ham {
   }
   .projects__list .projects__project button {
     height: 380px;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+  }
+  .projects__list .projects__project button:hover {
+    -webkit-transform: perspective(2000px) rotate3d(0, 1, 0, -25deg);
+            transform: perspective(2000px) rotate3d(0, 1, 0, -25deg);
   }
   .text__twoCol .wrapper {
     display: -webkit-box;
@@ -1373,7 +1398,7 @@ button .button--ham {
   .contact__form .contact__wrap input:last-of-type {
     margin-bottom: 52px;
   }
-  .contact__form input {
+  .contact__form .input__wrapper {
     width: 48%;
   }
   .contact__form h2 {

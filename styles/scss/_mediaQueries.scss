@@ -234,6 +234,7 @@
                 li{
                     width: calc(100%/3 - 20px);
                     margin-right: 20px;
+                    
                 }
 
                 li:nth-of-type(3){
@@ -243,6 +244,11 @@
 
             .projects__project button{
                 height: 380px;
+                transition: transform 1s;
+            }
+
+            .projects__project button:hover{
+                transform: perspective(2000px) rotate3d(0, 1, 0, -25deg);
             }
         }
 
@@ -331,7 +337,7 @@
                 margin-bottom: 52px;
             }
 
-            input{
+            .input__wrapper{
                 width: 48%;
             }
 

@@ -39,4 +39,7 @@ $(function(){
     // call init function
     dxss.init();
 
+    // call AOS library
+    AOS.init();
+
 });

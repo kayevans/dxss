@@ -22,12 +22,26 @@
         display: flex;
         flex-direction: column;
 
+        .input__wrapper{
+            position: relative;
+        }
+
+        label{
+            position: absolute;
+            top: -20px;
+            left: 0;
+            @include font(500);
+            opacity: 0;
+            color: #090b0d7a;
+            transition: all 0.5s ease;
+        }
 
         input{
             margin-bottom: 52px;
             border: none;
             border-bottom: 2px solid #D8D8D8;
             padding: 10px 0;
+            width: 100%;
     
             &::placeholder{
                 @include font(500);
@@ -39,10 +53,12 @@
                 border-bottom-color: $primary;
                 outline: none;
             }
-        }
-    
-        input:last-of-type{
-            margin-bottom: 20px;
+
+            // show label when in focus
+            &:focus + label{
+                opacity: 1;
+
+            }
         }
     
         input[type="text"],
