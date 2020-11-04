@@ -1,6 +1,99 @@
 // my namespaces
 const dxss = {};
 
+// images
+dxss.headerImages = [
+    {
+        name: 'chair',
+        path: 'drew-beamer-Se7vVKzYxTI-unsplash.png'
+    },
+    {
+        name: 'skyline',
+        path: 'image00001.png'
+    },
+    {
+        name: 'pipes',
+        path: 'image00004.png'
+    },
+    {
+        name: 'hotel',
+        path: 'image000011.png'
+    },
+];
+
+// testimonials
+dxss.testimonials = [
+    {
+        name: "Hugo",
+        company: "SPRINT MECHANICAL",
+        testimonial: "During our ongoing partnership; DX Systems Solutions Inc. has proven to be very organized with managing projects from conception to completion. I am also impressed with DX Systems Solutions Inc. quality of workmanship and attention to detail."
+    },
+    {
+        name: "Riley",
+        company: "Dotfusion",
+        testimonial: "Hello during our ongoing partnership; DX Systems Solutions Inc. has proven to be very organized with managing projects from conception to completion. I am also impressed with DX Systems Solutions Inc. quality of workmanship and attention to detail."
+    },
+    {
+        name: "Kay",
+        company: "Lorem ipsum",
+        testimonial: "Ipsum during our ongoing partnership; DX Systems Solutions Inc. has proven to be very organized with managing projects from conception to completion. I am also impressed with DX Systems Solutions Inc. quality of workmanship and attention to detail."
+    },
+];
+
+// function to change the testimonial slides
+dxss.changeTest = function(){
+
+    // create a variable to store the CURRENT SLIDE
+    let currentSlide = Math.floor(Math.random() * dxss.testimonials.length);
+    
+
+    // on load show a random testimonial
+    let currentTest = dxss.testimonials[currentSlide];
+    // console.log(currentTest.testimonial);
+
+    // change the testimonial to the random testimonial
+    $('.testimonial__slide p').text(currentTest.testimonial);
+    $('.testimonial__name').text(currentTest.name);
+    $('.testimonial__title').text(currentTest.company);
+
+    // on click of the next button go to next test
+    $('.testimonial__button--prev').on('click', function(){
+        // if the current slide is 0 then go back to length of array
+        if(currentSlide === 0){
+            currentSlide = dxss.testimonials.length - 1;
+        } else {
+            currentSlide--;
+        }
+
+        // remake current test
+        currentTest = dxss.testimonials[currentSlide];
+
+        // change the testimonial to the random testimonial
+        $('.testimonial__slide p').text(currentTest.testimonial);
+        $('.testimonial__name').text(currentTest.name);
+        $('.testimonial__title').text(currentTest.company);
+    });
+
+
+    // on click of back button go to last
+    $('.testimonial__button--next').on('click', function(){
+        // if the current slide is the length of array then go back to length of array
+        if(currentSlide === dxss.testimonials.length - 1){
+            currentSlide = 0;
+        } else {
+            currentSlide++;
+        }
+
+        // remake current test
+        currentTest = dxss.testimonials[currentSlide];
+
+        // change the testimonial to the random testimonial
+        $('.testimonial__slide p').text(currentTest.testimonial);
+        $('.testimonial__name').text(currentTest.name);
+        $('.testimonial__title').text(currentTest.company);
+    });
+};
+
 
 // my init function
 dxss.init = function(){
@@ -29,7 +122,11 @@ dxss.init = function(){
             $('.nav__menu .nav__links').removeClass('scrollin');
             $('.button--call').removeClass('scrollin');
         }
-    })
+    });
+
+    // call function for testimonials
+    dxss.changeTest();
+
 }
 
 

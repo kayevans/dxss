@@ -307,6 +307,10 @@ h4 {
   font-size: 1.4rem;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .button--dark {
   display: inline-block;
   text-align: center;
@@ -514,6 +518,57 @@ button .button--ham {
   text-transform: lowercase;
   font-size: 1.2rem;
   padding-top: 10px;
+}
+
+.header__title .scroll svg #Path {
+  -webkit-animation: mouse 2.5s linear infinite;
+          animation: mouse 2.5s linear infinite;
+}
+
+@-webkit-keyframes mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  15% {
+    opacity: 1;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+}
+
+@keyframes mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  15% {
+    opacity: 1;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
 }
 
 .services {

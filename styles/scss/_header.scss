@@ -224,5 +224,29 @@ button .button--ham{
             font-size: 1.2rem;
             padding-top: 10px;
         }
+
+        svg #Path{
+            animation: mouse 2.5s linear infinite;
+        }
+    }
+}
+
+@keyframes mouse{
+
+    0%{
+        opacity: 1;
+        transform: translateY(-1px);
+    }
+    15%{
+        opacity: 1;
+        transform: translateY(2px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateY(2px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-1px);
     }
 }
