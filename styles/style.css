@@ -307,10 +307,6 @@ h4 {
   font-size: 1.4rem;
 }
 
-main {
-  overflow-x: hidden;
-}
-
 .button--dark {
   display: inline-block;
   text-align: center;
@@ -1287,6 +1283,7 @@ button .button--ham {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-left: 10%;
+    overflow-x: hidden;
   }
   .callout .callout__image {
     width: 40%;

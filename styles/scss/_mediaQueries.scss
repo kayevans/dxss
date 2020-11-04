@@ -158,16 +158,19 @@
 
         // CALLOUTS
         .callout{
+            
             display: flex;
             width: 90%;
 
             &.callout--left{
                 flex-direction: row-reverse;
+                
             }
 
             &.callout--right{
                 flex-direction: row;
                 margin-left: 10%;
+                overflow-x: hidden;
 
             }
 
