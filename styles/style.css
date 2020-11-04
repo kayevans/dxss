@@ -605,6 +605,8 @@ button .button--ham {
 
 .card .card__content p {
   margin-bottom: 15px;
+  font-size: 1.2rem;
+  line-height: 2;
 }
 
 .logos {
@@ -1492,7 +1494,8 @@ button .button--ham {
     width: 70%;
   }
   .footer__address .footer__subtitle {
-    max-width: 400px;
+    max-width: 640px;
+    font-size: 3.2rem;
   }
   .footer__address article:first-of-type {
     padding-bottom: 0px;
@@ -1564,5 +1567,6 @@ button .button--ham {
   }
   .testimonials h2 {
     max-width: 350px;
+    line-height: 1.18;
   }
 }
