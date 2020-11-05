@@ -60,8 +60,10 @@ h4{
 .button--dark{
     display: inline-block;
     text-align: center;
+    line-height: 1;
+    letter-spacing: 0.5px;
     width: 137px;
-    padding: 18px 0 12px;
+    padding: 18px 0;
     @include font(700);
     color: $fontWhite;
     background-color: $secondary;
@@ -73,6 +75,7 @@ h4{
     color: $primary;
     text-decoration: underline;
     text-transform: capitalize;
+    transition: all 0.5s ease;
 
     &:hover,
     &:focus{

@@ -71,6 +71,7 @@
     &.white{
         background-color: white;
         box-shadow: 0 2px 6px 1px rgba(0,0,0,0.32);
+        padding: 15px 0;
     }
 
     .wrapper{
@@ -226,7 +227,7 @@ button .button--ham{
         }
 
         svg #Path{
-            animation: mouse 2.5s linear infinite;
+            animation: mouse 1.5s linear infinite;
         }
     }
 }
