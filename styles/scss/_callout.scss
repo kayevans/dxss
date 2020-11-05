@@ -1,4 +1,8 @@
 // callout styles
+// prevent animation overflow
+.callout__container{
+    overflow: hidden;
+}
 
 // overall callout
 .callout{

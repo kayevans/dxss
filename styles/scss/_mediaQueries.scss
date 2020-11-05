@@ -30,7 +30,9 @@
 
         // show nav items
         .nav__menu{
-            display: block;
+            // display: block;
+            transform: scale(1);
+            opacity: 1;
             position: static;
             padding: 0;
             height: auto;
@@ -218,11 +220,6 @@
                 }
 
             }
-        }
-
-        // prevent animation overflow
-        .callout__container{
-            overflow: hidden;
         }
 
         // CALLOUTS

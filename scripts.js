@@ -40,6 +40,21 @@ dxss.testimonials = [
     },
 ];
 
+// function to change the background images
+dxss.changeImage = function(){
+    // create a variable to store current image
+    let currentNum = 1;
+    // let currentImg = dxss.headerImages[currentNum];
+
+    // use the image to replace background image
+    $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${dxss.headerImages[currentNum].path}')`);
+    setInterval(function(){
+        $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${dxss.headerImages[currentNum].path}')`);
+        currentNum === dxss.headerImages.length - 1 ? currentNum = 0 : currentNum++;
+    }, 8000);
+
+}
+
 // function to change the testimonial slides
 dxss.changeTest = function(){
 
@@ -49,7 +64,6 @@ dxss.changeTest = function(){
 
     // on load show a random testimonial
     let currentTest = dxss.testimonials[currentSlide];
-    // console.log(currentTest.testimonial);
 
     // change the testimonial to the random testimonial
     $('.testimonial__slide p').text(currentTest.testimonial);
@@ -69,9 +83,15 @@ dxss.changeTest = function(){
         currentTest = dxss.testimonials[currentSlide];
 
         // change the testimonial to the random testimonial
-        $('.testimonial__slide p').text(currentTest.testimonial);
-        $('.testimonial__name').text(currentTest.name);
-        $('.testimonial__title').text(currentTest.company);
+        $('.testimonial__slide p').animate({'opacity': 0}, 400, function(){
+            $('.testimonial__slide p').text(currentTest.testimonial).animate({'opacity': 1}, 400);
+        });
+        $('.testimonial__name').animate({'opacity': 0}, 400, function(){
+            $('.testimonial__name').text(currentTest.name).animate({'opacity': 1}, 400);
+        });
+        $('.testimonial__title').animate({'opacity': 0}, 400, function(){
+            $('.testimonial__title').text(currentTest.company).animate({'opacity': 1}, 400);
+        });
     });
 
 
@@ -88,9 +108,15 @@ dxss.changeTest = function(){
         currentTest = dxss.testimonials[currentSlide];
 
         // change the testimonial to the random testimonial
-        $('.testimonial__slide p').text(currentTest.testimonial);
-        $('.testimonial__name').text(currentTest.name);
-        $('.testimonial__title').text(currentTest.company);
+        $('.testimonial__slide p').animate({'opacity': 0}, 400, function(){
+            $('.testimonial__slide p').text(currentTest.testimonial).animate({'opacity': 1}, 400);
+        });
+        $('.testimonial__name').animate({'opacity': 0}, 400, function(){
+            $('.testimonial__name').text(currentTest.name).animate({'opacity': 1}, 400);
+        });
+        $('.testimonial__title').animate({'opacity': 0}, 400, function(){
+            $('.testimonial__title').text(currentTest.company).animate({'opacity': 1}, 400);
+        });
     });
 };
 
@@ -101,6 +127,7 @@ dxss.init = function(){
     // function to show and hide the nav
     $('.button--ham').on('click', function(){
         $('.nav__menu').addClass('open');
+        console.log('clicked')
     })
 
     $('.button--cross').on('click', function(){
@@ -126,6 +153,9 @@ dxss.init = function(){
 
     // call function for testimonials
     dxss.changeTest();
+
+    // call function for background images
+    dxss.changeImage();
 
 }
 

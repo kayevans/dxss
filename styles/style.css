@@ -345,7 +345,9 @@ h4 {
   background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/drew-beamer-Se7vVKzYxTI-unsplash.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  -webkit-animation: zoomin 60s infinite linear;
+          animation: zoomin 60s infinite linear;
 }
 
 .team-page .header--main {
@@ -353,7 +355,9 @@ h4 {
   background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image000011.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  -webkit-animation: zoomin 60s infinite linear;
+          animation: zoomin 60s infinite linear;
 }
 
 .projects-page .header--main {
@@ -361,7 +365,9 @@ h4 {
   background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image00005.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  -webkit-animation: zoomin 60s infinite linear;
+          animation: zoomin 60s infinite linear;
 }
 
 .services-page .header--main {
@@ -369,7 +375,9 @@ h4 {
   background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image00004.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  -webkit-animation: zoomin 60s infinite linear;
+          animation: zoomin 60s infinite linear;
 }
 
 .header--home {
@@ -378,6 +386,8 @@ h4 {
   background-position: 30% 25%;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-animation: zoomin 60s infinite linear;
+          animation: zoomin 60s infinite linear;
   position: relative;
 }
 
@@ -430,7 +440,11 @@ h4 {
 }
 
 .nav__menu {
-  display: none;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
   padding: 0 12.5%;
   position: fixed;
   z-index: 10;
@@ -444,7 +458,9 @@ h4 {
 }
 
 .nav__menu.open {
-  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .nav__menu button .button--cross {
@@ -569,6 +585,30 @@ button .button--ham {
     opacity: 0;
     -webkit-transform: translateY(-1px);
             transform: translateY(-1px);
+  }
+}
+
+@-webkit-keyframes zoomin {
+  0% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 120% 120%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 120% 120%;
+  }
+  100% {
+    background-size: 100% 100%;
   }
 }
 
@@ -756,6 +796,7 @@ button .button--ham {
 
 .intro {
   padding: 70px 0 230px;
+  overflow: hidden;
 }
 
 .intro h2 {
@@ -783,6 +824,10 @@ button .button--ham {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+}
+
+.callout__container {
+  overflow: hidden;
 }
 
 .callout {
@@ -1161,7 +1206,9 @@ button .button--ham {
     display: none;
   }
   .nav__menu {
-    display: block;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
     position: static;
     padding: 0;
     height: auto;
@@ -1325,9 +1372,6 @@ button .button--ham {
   }
   .content .content__services li {
     margin-bottom: 15px;
-  }
-  .callout__container {
-    overflow: hidden;
   }
   .callout {
     display: -webkit-box;
