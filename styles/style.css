@@ -443,8 +443,8 @@ h4 {
   opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
   padding: 0 12.5%;
   position: fixed;
   z-index: 10;
@@ -1133,6 +1133,13 @@ button .button--ham {
   font-style: normal;
   line-height: 2.14;
   margin-bottom: 20px;
+}
+
+.contact__map {
+  position: relative;
+  top: -200px;
+  z-index: -10;
+  margin-bottom: -200px;
 }
 
 .footer__address {

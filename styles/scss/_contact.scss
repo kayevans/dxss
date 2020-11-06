@@ -111,3 +111,11 @@
         margin-bottom: 20px;
     }
 }
+
+// map styles
+.contact__map{
+    position: relative;
+    top: -200px;
+    z-index: -10;
+    margin-bottom: -200px;
+}

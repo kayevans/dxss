@@ -127,7 +127,7 @@ dxss.init = function(){
     // function to show and hide the nav
     $('.button--ham').on('click', function(){
         $('.nav__menu').addClass('open');
-        console.log('clicked')
+        // console.log('clicked')
     })
 
     $('.button--cross').on('click', function(){
@@ -156,6 +156,20 @@ dxss.init = function(){
 
     // call function for background images
     dxss.changeImage();
+
+    // MAP STUFFS
+    let map = new mapboxgl.Map({
+        container: 'contact__map',
+        style: 'mapbox://styles/mapbox/dark-v10', // stylesheet location
+        center: [-79.701690, 43.761550], // starting position [lng, lat]
+        zoom: 15, // starting zoom,
+        accessToken: 'pk.eyJ1Ijoia2V2YW5zMTAiLCJhIjoiY2toNXBxMGlhMGpldjJybzh5OHk4eHdoYiJ9.v2pZLmDTI_2yhKl3pApvkg'
+
+    });
+
+    var marker = new mapboxgl.Marker({
+        color: '#0086DD',
+    }).setLngLat([-79.701690, 43.761550]).addTo(map);
 
 }
 
