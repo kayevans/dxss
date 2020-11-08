@@ -77,12 +77,21 @@ dxss.showGallery = function(){
 dxss.changeImage = function(){
     // create a variable to store current image
     let currentNum = 1;
-
     // use the image to replace background image
     $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${$(window).width() <= 768 ? dxss.mobImages[currentNum].path : dxss.headerImages[currentNum].path}')`);
     setInterval(function(){
+        // if($('.header--home').hasClass('animated')){
+        //     $('.header--home').removeClass('animated');
+        // } else{
+        //     $('.header--home').addClass('animated');
+        // }
+        // $('.header--home').removeClass('animated');
         $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${$(window).width() <= 768 ? dxss.mobImages[currentNum].path : dxss.headerImages[currentNum].path}')`);
         currentNum === dxss.headerImages.length - 1 ? currentNum = 0 : currentNum++;
+        // $('.header--home').addClass('animated');
+        // setTimeout(function () { 
+        //     $('.header--home').removeClass('animated');
+        // }, 8000);
     }, 8000);
 
 }
@@ -264,6 +273,9 @@ dxss.init = function(){
             },
         })
     }
+
+    // when loaded add class of loaded to body for animation
+    $('body').addClass('loaded');
 
 
 }

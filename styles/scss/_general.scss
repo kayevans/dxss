@@ -67,6 +67,30 @@ h4{
     @include font(700);
     color: $fontWhite;
     background-color: $secondary;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    // before element on hover
+    &:before{
+        content: '';
+        width: calc(100% + 40px);
+        height: 100%;
+        display: block;
+        background-color: $primary;
+        transform: skew(-20deg);
+        position: absolute;
+        top: 0;
+        left: calc(-100% - 50px);  
+        transition: all 0.2s ease;
+        z-index: -1;
+    
+    }
+
+    &:hover::before,
+    &:focus::before{
+        left: -20px;
+    }
 }
 
 // link styles
@@ -81,5 +105,49 @@ h4{
     &:focus{
         color: $fontMain;
         text-decoration: none;
+    }
+}
+
+// blue swipe
+body:before{
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+    z-index: 1000;
+    // transform: translateX(0);
+    // transition: all 1s ease;
+    
+
+    
+}
+
+body.loaded:before{
+        // transform: translateX(-100%);
+        animation: swipe 1.5s forwards;
+}
+
+// blue swip animation
+@keyframes swipe{
+
+    0%{
+        transform: translateX(0);
+    }
+
+    40%{
+        transform: translateX(0);
+    }
+
+    70%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
     }
 }
