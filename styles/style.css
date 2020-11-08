@@ -341,8 +341,8 @@ h4 {
 }
 
 .contact-page .header--main {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/drew-beamer-Se7vVKzYxTI-unsplash.png");
-  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/drew-beamer-Se7vVKzYxTI-unsplash.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/room-mob.png");
+  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/room-mob.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -351,8 +351,8 @@ h4 {
 }
 
 .team-page .header--main {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/image000011.png");
-  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image000011.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/hotel-mob.png");
+  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/hotel-mob.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -361,8 +361,8 @@ h4 {
 }
 
 .projects-page .header--main {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/image00005.png");
-  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image00005.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/roof-mob.png");
+  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/roof-mob.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -371,8 +371,8 @@ h4 {
 }
 
 .services-page .header--main {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/image00004.png");
-  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image00004.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/basement-mob.png");
+  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/basement-mob.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -876,7 +876,7 @@ button .button--ham {
   top: -170px;
 }
 
-.projects__list ul {
+.projects__list ul.projects__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -886,7 +886,7 @@ button .button--ham {
           flex-direction: column;
 }
 
-.projects__list .projects__project button {
+.projects__list .projects__project > button {
   height: 340px;
   padding: 0 26px 40px;
   margin-bottom: 30px;
@@ -909,16 +909,56 @@ button .button--ham {
           justify-content: flex-end;
 }
 
-.projects__list .projects__project button h3 {
+.projects__list .projects__project > button h3 {
   font-size: 2rem;
   padding-bottom: 10px;
   color: #ffffff;
 }
 
-.projects__list .projects__project button p {
+.projects__list .projects__project > button p {
   color: #009AFF;
   font-family: "Spartan", sans-serif;
   font-weight: 700;
+}
+
+.projects__list .projects__gallery {
+  position: fixed;
+  display: none;
+  z-index: 150;
+  top: 0;
+  height: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.746);
+}
+
+.projects__list .projects__gallery.open-gallery {
+  display: block;
+}
+
+.projects__list .projects__gallery .swiper-container {
+  width: 80%;
+  margin-top: 100px;
+}
+
+.projects__list .projects__gallery .swiper-button-prev, .projects__list .projects__gallery .swiper-button-next {
+  color: #0086DD;
+}
+
+.projects__list .projects__gallery .close-gallery {
+  position: absolute;
+  top: 23px;
+  right: 12.5%;
+  padding: 5px;
+}
+
+.projects__list .projects__gallery .close-gallery img {
+  width: 20px;
+}
+
+.projects__list .projects__gallery img {
+  margin: 0 auto;
 }
 
 .text__twoCol {
@@ -1197,6 +1237,22 @@ button .button--ham {
   .wrapper {
     width: 80%;
   }
+  .contact-page .header--main {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/drew-beamer-Se7vVKzYxTI-unsplash.png");
+    background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/drew-beamer-Se7vVKzYxTI-unsplash.png");
+  }
+  .team-page .header--main {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/image000011.png");
+    background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image000011.png");
+  }
+  .projects-page .header--main {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/image00005.png");
+    background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image00005.png");
+  }
+  .services-page .header--main {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/image00004.png");
+    background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image00004.png");
+  }
   .nav .wrapper {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1453,7 +1509,7 @@ button .button--ham {
   .intro .wrapper p {
     width: 40%;
   }
-  .projects__list ul {
+  .projects__list ul.projects__buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1461,23 +1517,33 @@ button .button--ham {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .projects__list ul li {
+  .projects__list ul.projects__buttons .projects__project {
     width: calc(100%/3 - 20px);
     margin-right: 20px;
   }
-  .projects__list ul li:nth-of-type(3) {
+  .projects__list ul.projects__buttons .projects__project:nth-of-type(3) {
     margin-right: 0;
   }
-  .projects__list .projects__project button {
+  .projects__list .projects__project > button {
     height: 380px;
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
   }
-  .projects__list .projects__project button:hover {
+  .projects__list .projects__project > button:hover {
     -webkit-transform: perspective(2000px) rotate3d(0, 1, 0, -25deg);
             transform: perspective(2000px) rotate3d(0, 1, 0, -25deg);
+  }
+  .projects__list .projects__gallery .swiper-container {
+    width: 60%;
+    margin-top: 100px;
+  }
+  .projects__list .projects__gallery .swiper-button-prev {
+    left: 20px;
+  }
+  .projects__list .projects__gallery .swiper-button-next {
+    right: 20px;
   }
   .text__twoCol .wrapper {
     display: -webkit-box;

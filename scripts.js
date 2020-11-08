@@ -21,6 +21,26 @@ dxss.headerImages = [
     },
 ];
 
+// images for mob
+dxss.mobImages = [
+    {
+        name: 'chair',
+        path: 'room-mob.png'
+    },
+    {
+        name: 'skyline',
+        path: 'skyline-mob.png'
+    },
+    {
+        name: 'pipes',
+        path: 'basement-mob.png'
+    },
+    {
+        name: 'hotel',
+        path: 'hotel-mob.png'
+    },
+]
+
 // testimonials
 dxss.testimonials = [
     {
@@ -40,16 +60,28 @@ dxss.testimonials = [
     },
 ];
 
+// funciton to show the galleries
+dxss.showGallery = function(){
+    // take buttons and on click open gallery
+    $('.projects__project > button').on('click', function(){
+        $(this).closest('.projects__project').children('.projects__gallery').addClass('open-gallery');
+    })
+
+    // control button to close
+    $('.close-gallery').on('click', function(){
+        $(this).closest('.projects__project').children('.projects__gallery').removeClass('open-gallery');
+    })
+}
+
 // function to change the background images
 dxss.changeImage = function(){
     // create a variable to store current image
     let currentNum = 1;
-    // let currentImg = dxss.headerImages[currentNum];
 
     // use the image to replace background image
-    $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${dxss.headerImages[currentNum].path}')`);
+    $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${$(window).width() <= 768 ? dxss.mobImages[currentNum].path : dxss.headerImages[currentNum].path}')`);
     setInterval(function(){
-        $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${dxss.headerImages[currentNum].path}')`);
+        $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${$(window).width() <= 768 ? dxss.mobImages[currentNum].path : dxss.headerImages[currentNum].path}')`);
         currentNum === dxss.headerImages.length - 1 ? currentNum = 0 : currentNum++;
     }, 8000);
 
@@ -127,7 +159,6 @@ dxss.init = function(){
     // function to show and hide the nav
     $('.button--ham').on('click', function(){
         $('.nav__menu').addClass('open');
-        // console.log('clicked')
     })
 
     $('.button--cross').on('click', function(){
@@ -158,18 +189,82 @@ dxss.init = function(){
     dxss.changeImage();
 
     // MAP STUFFS
-    let map = new mapboxgl.Map({
-        container: 'contact__map',
-        style: 'mapbox://styles/mapbox/dark-v10', // stylesheet location
-        center: [-79.701690, 43.761550], // starting position [lng, lat]
-        zoom: 15, // starting zoom,
-        accessToken: 'pk.eyJ1Ijoia2V2YW5zMTAiLCJhIjoiY2toNXBxMGlhMGpldjJybzh5OHk4eHdoYiJ9.v2pZLmDTI_2yhKl3pApvkg'
+    // if contact page run following code 
+    if($('body').hasClass('contact-page')){
+        let map = new mapboxgl.Map({
+            container: 'contact__map',
+            style: 'mapbox://styles/mapbox/dark-v10', // stylesheet location
+            center: [-79.701690, 43.761550], // starting position [lng, lat]
+            zoom: 15, // starting zoom,
+            accessToken: 'pk.eyJ1Ijoia2V2YW5zMTAiLCJhIjoiY2toNXBxMGlhMGpldjJybzh5OHk4eHdoYiJ9.v2pZLmDTI_2yhKl3pApvkg'
+    
+        });
+        let marker = new mapboxgl.Marker({
+            color: '#0086DD',
+        }).setLngLat([-79.701690, 43.761550]).addTo(map);
+    }
 
-    });
+    // SLIDERS 
+    // if projects page run code
+    if($('body').hasClass('projects-page')){
+        // call function to show and hide projects
+        dxss.showGallery();
+        
+        const swiperOne = new Swiper('#swiper-one', {
+            observer: true,
+            observeParents: true,
+            navigation: {
+                nextEl: '#swiper-button-next-one',
+                prevEl: '#swiper-button-prev-one',
+            },
+        })
 
-    var marker = new mapboxgl.Marker({
-        color: '#0086DD',
-    }).setLngLat([-79.701690, 43.761550]).addTo(map);
+        const swiperTwo = new Swiper('#swiper-two', {
+            observer: true,
+            observeParents: true,
+            navigation: {
+                nextEl: '#swiper-button-next-two',
+                prevEl: '#swiper-button-prev-two',
+            },
+        })
+
+        const swiperThree = new Swiper('#swiper-three', {
+            observer: true,
+            observeParents: true,
+            navigation: {
+                nextEl: '#swiper-button-next-three',
+                prevEl: '#swiper-button-prev-three',
+            },
+        })
+
+        const swiperFour = new Swiper('#swiper-four', {
+            observer: true,
+            observeParents: true,
+            navigation: {
+                nextEl: '#swiper-button-next-four',
+                prevEl: '#swiper-button-prev-four',
+            },
+        })
+
+        const swiperFive = new Swiper('#swiper-five', {
+            observer: true,
+            observeParents: true,
+            navigation: {
+                nextEl: '#swiper-button-next-five',
+                prevEl: '#swiper-button-prev-five',
+            },
+        })
+
+        const swiperSix = new Swiper('#swiper-six', {
+            observer: true,
+            observeParents: true,
+            navigation: {
+                nextEl: '#swiper-button-next-six',
+                prevEl: '#swiper-button-prev-six',
+            },
+        })
+    }
+
 
 }
 

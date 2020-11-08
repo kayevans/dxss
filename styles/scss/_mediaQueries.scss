@@ -8,6 +8,26 @@
 
         //     HEADER STYLEs
 
+        // contact header
+        .contact-page .header--main{
+            background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/drew-beamer-Se7vVKzYxTI-unsplash.png');
+        }
+
+        // team header
+        .team-page .header--main{
+            background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image000011.png');
+        }
+
+        // projects header
+        .projects-page .header--main{
+            background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image00005.png');
+        }
+
+        // services header
+        .services-page .header--main{
+            background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image00004.png');
+        }
+
         // nav styles
         .nav {
 
@@ -300,28 +320,43 @@
 
         // PROJECTS PAGE
         .projects__list{
-            ul{
+            ul.projects__buttons{
                 flex-direction: row;
                 flex-wrap: wrap;
 
-                li{
+                .projects__project{
                     width: calc(100%/3 - 20px);
                     margin-right: 20px;
                     
                 }
 
-                li:nth-of-type(3){
+                .projects__project:nth-of-type(3){
                     margin-right: 0;
                 }
             }
 
-            .projects__project button{
+            .projects__project > button{
                 height: 380px;
                 transition: transform 1s;
             }
 
-            .projects__project button:hover{
+            .projects__project > button:hover{
                 transform: perspective(2000px) rotate3d(0, 1, 0, -25deg);
+            }
+
+            .projects__gallery{
+                .swiper-container{
+                    width: 60%;
+                    margin-top: 100px;
+                }
+
+                .swiper-button-prev{
+                    left: 20px;
+                }
+
+                .swiper-button-next{
+                    right: 20px;
+                }
             }
         }
 
