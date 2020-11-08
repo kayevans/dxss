@@ -714,8 +714,8 @@ button .button--ham {
 
 @-webkit-keyframes swipe-home {
   0% {
-    -webkit-transform: translateX(80%);
-            transform: translateX(80%);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   40% {
     -webkit-transform: translateX(0);
@@ -733,8 +733,8 @@ button .button--ham {
 
 @keyframes swipe-home {
   0% {
-    -webkit-transform: translateX(80%);
-            transform: translateX(80%);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   40% {
     -webkit-transform: translateX(0);

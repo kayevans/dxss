@@ -293,7 +293,7 @@ button .button--ham{
 // keyframe for the home transition between images
 @keyframes swipe-home{
     0%{
-        transform: translateX(80%);
+        transform: translateX(0);
     }
 
     40%{
