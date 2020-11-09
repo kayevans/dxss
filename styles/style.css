@@ -830,7 +830,6 @@ button .button--ham {
 .testimonial__slide p {
   font-size: 1.2rem;
   line-height: 2;
-  margin-bottom: 22px;
 }
 
 .testimonial__slide .testimonial__name,
@@ -840,6 +839,7 @@ button .button--ham {
 }
 
 .testimonial__slide .testimonial__bottom {
+  padding-top: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,9 +891,13 @@ button .button--ham {
   margin-bottom: 50px;
 }
 
+.content .content__mainp p {
+  margin-bottom: 15px;
+}
+
 .content .content__services ul {
   list-style-type: disc;
-  padding: 0 10px;
+  padding: 0 10px 30px;
 }
 
 .content .content__services li {
@@ -1596,6 +1600,9 @@ button .button--ham {
             columns: 2;
     -webkit-column-gap: 40px;
             column-gap: 40px;
+  }
+  .content .content__services p, .content .content__services h3 {
+    max-width: 540px;
   }
   .content .content__services li {
     margin-bottom: 15px;

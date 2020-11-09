@@ -47,7 +47,7 @@
     p {
         font-size: 1.2rem;
         line-height: 2;
-        margin-bottom: 22px;
+        // margin-bottom: 22px;
     }
 
     .testimonial__name,
@@ -58,6 +58,7 @@
     }
 
     .testimonial__bottom{
+        padding-top: 22px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;

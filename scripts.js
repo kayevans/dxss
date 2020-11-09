@@ -44,20 +44,30 @@ dxss.mobImages = [
 // testimonials
 dxss.testimonials = [
     {
-        name: "Hugo",
+        name: "Patrick",
+        company: "eSTRUXTURE DATA CENTRES",
+        testimonial: "Their service has always been prompt and courteous and I have no hesitation in recommending them to any client. They are a professional contractor who can do both service and installation."
+    },
+    {
+        name: "Marty",
+        company: "RADIANT COMMUNICATIONS",
+        testimonial: "Throughout our working relationship you have proven to be more than competitive in your pricing, reliable and extremely honest. I know that I can rely on you and your staff to represent our firm and trust that our clients are being serviced well. "
+    },
+    {
+        name: "DELANO",
+        company: "VERTIV CANADA",
+        testimonial: "DX Systems Solutions Inc. and Vertiv (Liebert) have enjoyed a close working relationship for several years. We recognize DX Systems Solutions as having met all the current requirements and commitments to earn the designation as a Vertiv (Liebert) Factory Trained Service Provider."
+    },
+    {
+        name: "MATISON",
+        company: "BGIS CORPORATE SERVICES",
+        testimonial: "During our association they have proven to be reliable, honest and very competitive in price. I am also impressed with the professional capability and workmanship I have observed in their performance."
+    },
+    {
+        name: "HUGO",
         company: "SPRINT MECHANICAL",
         testimonial: "During our ongoing partnership; DX Systems Solutions Inc. has proven to be very organized with managing projects from conception to completion. I am also impressed with DX Systems Solutions Inc. quality of workmanship and attention to detail."
-    },
-    {
-        name: "Riley",
-        company: "Dotfusion",
-        testimonial: "Hello during our ongoing partnership; DX Systems Solutions Inc. has proven to be very organized with managing projects from conception to completion. I am also impressed with DX Systems Solutions Inc. quality of workmanship and attention to detail."
-    },
-    {
-        name: "Kay",
-        company: "Lorem ipsum",
-        testimonial: "Ipsum during our ongoing partnership; DX Systems Solutions Inc. has proven to be very organized with managing projects from conception to completion. I am also impressed with DX Systems Solutions Inc. quality of workmanship and attention to detail."
-    },
+    }
 ];
 
 // funciton to show the galleries

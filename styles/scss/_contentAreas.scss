@@ -25,12 +25,16 @@
     .content__mainp{
         line-height: 2.4;
         margin-bottom: 50px;
+
+        p{
+            margin-bottom: 15px;
+        }
     }
 
     .content__services{
         ul{
             list-style-type: disc;
-            padding: 0 10px;
+            padding: 0 10px 30px;
         }
 
         li{
