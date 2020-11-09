@@ -112,10 +112,15 @@
     }
 }
 
+// call out 
+.contact-page .callout{
+    position: relative;
+    z-index: 10;
+}
+
 // map styles
 .contact__map{
     position: relative;
     top: -200px;
-    z-index: -10;
     margin-bottom: -200px;
 }

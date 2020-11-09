@@ -47,7 +47,7 @@
     background-size: cover;
     animation: zoomin 60s infinite linear;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 
     &::before{
         content: '';

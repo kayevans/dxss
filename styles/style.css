@@ -468,7 +468,7 @@ body.loaded:before {
   -webkit-animation: zoomin 60s infinite linear;
           animation: zoomin 60s infinite linear;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .header--home::before {
@@ -1314,10 +1314,14 @@ button .button--ham {
   margin-bottom: 20px;
 }
 
+.contact-page .callout {
+  position: relative;
+  z-index: 10;
+}
+
 .contact__map {
   position: relative;
   top: -200px;
-  z-index: -10;
   margin-bottom: -200px;
 }
 
