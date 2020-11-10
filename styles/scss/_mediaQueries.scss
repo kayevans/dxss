@@ -372,7 +372,6 @@
             .projects__gallery{
                 .swiper-container{
                     width: 60%;
-                    margin-top: 100px;
                 }
 
                 .swiper-button-prev{
@@ -413,6 +412,11 @@
 
         // TEAM PAGE
         .team__members{
+
+            .team__picture{
+                height: 450px;
+                width: 100%;
+            }
         
             .wrapper{
                 width: 70%;
@@ -624,6 +628,15 @@
             width: 80%;
             
         }
+    }
+
+    // team
+    .team__members{
+
+        .team__picture{
+            height: 500px;
+        }
+
     }
 
 }

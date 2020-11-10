@@ -1,5 +1,14 @@
 // footer styles
 
+footer{
+    a{
+        transition: all 0.5s ease;
+    }
+    a:hover{
+        color: $secondary;
+    }
+}
+
 // footer address styles
 .footer__address{
     padding: 70px 0;

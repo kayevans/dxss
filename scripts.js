@@ -4,20 +4,20 @@ const dxss = {};
 // images
 dxss.headerImages = [
     {
-        name: 'chair',
-        path: 'drew-beamer-Se7vVKzYxTI-unsplash.png'
+        name: 'roof',
+        path: 'image2.jpg'
     },
     {
         name: 'skyline',
         path: 'image00001.png'
     },
     {
-        name: 'pipes',
-        path: 'image00004.png'
+        name: 'hardhat',
+        path: 'image3.jpg'
     },
     {
-        name: 'hotel',
-        path: 'image000011.png'
+        name: 'back',
+        path: 'image1.jpg'
     },
 ];
 
@@ -86,20 +86,14 @@ dxss.showGallery = function(){
 // function to change the background images
 dxss.changeImage = function(){
     // create a variable to store current image
-    let currentNum = 1;
+    let currentNum = Math.floor(Math.random() * dxss.headerImages.length);
     // use the image to replace background image
-    // $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${$(window).width() <= 768 ? dxss.mobImages[currentNum].path : dxss.headerImages[currentNum].path}')`);
+    $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${$(window).width() <= 768 ? dxss.mobImages[currentNum].path : dxss.headerImages[currentNum].path}')`);
     setInterval(function(){
-        // if($('.header--home').hasClass('animated')){
+        $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${$(window).width() <= 768 ? dxss.mobImages[currentNum].path : dxss.headerImages[currentNum].path}')`);
+        // setTimeout(function () { 
         //     $('.header--home').removeClass('animated');
-        // } else{
-        //     $('.header--home').addClass('animated');
-        // }
-        // $('.header--home').removeClass('animated');
-        $('.header--home').addClass('animated').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${$(window).width() <= 768 ? dxss.mobImages[currentNum].path : dxss.headerImages[currentNum].path}')`);
-        setTimeout(function () { 
-            $('.header--home').removeClass('animated');
-        }, 1500);
+        // }, 1500);
         currentNum === dxss.headerImages.length - 1 ? currentNum = 0 : currentNum++;
         // $('.header--home').addClass('animated');
         // setTimeout(function () { 
@@ -241,6 +235,10 @@ dxss.init = function(){
                 nextEl: '#swiper-button-next-one',
                 prevEl: '#swiper-button-prev-one',
             },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
         })
 
         const swiperTwo = new Swiper('#swiper-two', {
@@ -249,6 +247,10 @@ dxss.init = function(){
             navigation: {
                 nextEl: '#swiper-button-next-two',
                 prevEl: '#swiper-button-prev-two',
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
             },
         })
 
@@ -259,6 +261,10 @@ dxss.init = function(){
                 nextEl: '#swiper-button-next-three',
                 prevEl: '#swiper-button-prev-three',
             },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
         })
 
         const swiperFour = new Swiper('#swiper-four', {
@@ -267,6 +273,10 @@ dxss.init = function(){
             navigation: {
                 nextEl: '#swiper-button-next-four',
                 prevEl: '#swiper-button-prev-four',
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
             },
         })
 
@@ -277,6 +287,10 @@ dxss.init = function(){
                 nextEl: '#swiper-button-next-five',
                 prevEl: '#swiper-button-prev-five',
             },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
         })
 
         const swiperSix = new Swiper('#swiper-six', {
@@ -285,6 +299,10 @@ dxss.init = function(){
             navigation: {
                 nextEl: '#swiper-button-next-six',
                 prevEl: '#swiper-button-prev-six',
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
             },
         })
     }
