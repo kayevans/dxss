@@ -9,6 +9,8 @@
     <link rel="icon" sizes="192x192" href="./assets/android-chrome-192x192.png" type="image/x-icon">
     <link rel="icon" sizes="512x512" href="./assets/android-chrome-512x512.png" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- ANIMATE ON SCROLL CSS LIB -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- styles -->
@@ -78,21 +80,28 @@
     <!-- header begins -->
     <header class="header--home">
         <!-- nav ends -->
-        <section class="header__title" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1400" >
+        <section class="header__title">
             <!-- wrapper begins -->
             <div class="wrapper">
-                <h1 class="h1--home">Critical Environment, Installation, HVAC Services and Maintenance Provider</h1>
-                <a href="./services.html" class="button--dark">Learn More</a>
+                <h1 class="h1--home" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400">Critical Environment, Installation, HVAC Services and Maintenance Provider</h1>
+                <a href="./services.html" class="button--dark" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1800">Learn More</a>
             </div>
             <!-- wrapper ends -->
         </section>
+
+        <!-- images -->
+        <ul class="image-slides swiper-container">
+            <div class="swiper-wrapper">
+
+            </div>
+        </ul>
     </header>
     <!-- header ends -->
 
     <!-- main begins -->
     <main>
         <!-- services section begins -->
-        <section class="services" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1800">
+        <section class="services" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2200">
             <!-- wrapper begins -->
             <div class="wrapper">
                 <h2 class="h2--white">Our Services</h2>
@@ -302,6 +311,8 @@
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     <!-- ANIMATE ON SCROLL JS LIB -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- my js -->
     <script src="./scripts.js"></script>
 </body>

@@ -419,54 +419,85 @@ body.loaded:before {
   height: 100vh;
 }
 
-.contact-page .header--main {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/room-mob.png");
-  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/room-mob.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  -webkit-animation: zoomin 60s infinite linear;
-          animation: zoomin 60s infinite linear;
-}
-
+.services-page .header--main,
+.projects-page .header--main,
+.contact-page .header--main,
 .team-page .header--main {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/hotel-mob.png");
-  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/hotel-mob.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  -webkit-animation: zoomin 60s infinite linear;
-          animation: zoomin 60s infinite linear;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5)));
+  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5));
+  position: relative;
 }
 
-.projects-page .header--main {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/roof-mob.png");
-  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/roof-mob.png");
+.services-page .header--main .image-container,
+.projects-page .header--main .image-container,
+.contact-page .header--main .image-container,
+.team-page .header--main .image-container {
+  position: absolute;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  -webkit-animation: zoomin 60s infinite linear;
-          animation: zoomin 60s infinite linear;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  z-index: -2;
 }
 
-.services-page .header--main {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/basement-mob.png");
-  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/basement-mob.png");
+.services-page .header--main .image-container .image,
+.projects-page .header--main .image-container .image,
+.contact-page .header--main .image-container .image,
+.team-page .header--main .image-container .image {
+  height: 100%;
+  background-image: url("../assets/image00004.png");
+  width: 100%;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  -webkit-animation: zoomin 60s infinite linear;
-          animation: zoomin 60s infinite linear;
+  background-size: cover;
+  -webkit-animation: zoomin 60s infinite forwards;
+          animation: zoomin 60s infinite forwards;
+}
+
+.contact-page .header--main .image-container .image {
+  background-image: url("../assets/drew-beamer-Se7vVKzYxTI-unsplash.png");
+}
+
+.team-page .header--main .image-container .image {
+  background-image: url("../assets/image000011.png");
+}
+
+.projects-page .header--main .image-container .image {
+  background-image: url("../assets/image00005.png");
 }
 
 .header--home {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5)));
+  background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5));
+  position: relative;
+}
+
+.header--home .image-slides {
+  position: absolute;
   background-position: center;
   background-repeat: no-repeat;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.header--home .image-slides li {
+  height: 100%;
+  background-image: url(./assets/image2.jpg);
+  width: 100%;
+  background-position: center;
   background-size: cover;
-  -webkit-animation: zoomin 60s infinite linear;
-          animation: zoomin 60s infinite linear;
-  position: relative;
-  z-index: 1;
+}
+
+.header--home .image-slides li.swiper-slide-active {
+  -webkit-animation: zoomin 60s infinite forwards;
+          animation: zoomin 60s infinite forwards;
 }
 
 .header--home::after {
@@ -519,10 +550,15 @@ body.loaded:before {
 
 .nav__menu {
   opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  visibility: hidden;
+  -webkit-transition-property: visibility, opacity;
+  transition-property: visibility, opacity;
+  -webkit-transition-duration: 0.5s, 0.5s;
+          transition-duration: 0.5s, 0.5s;
+  -webkit-transition-timing-function: ease, ease;
+          transition-timing-function: ease, ease;
+  -webkit-transition-delay: 0s, 0s;
+          transition-delay: 0s, 0s;
   padding: 0 12.5%;
   position: fixed;
   z-index: 10;
@@ -537,8 +573,19 @@ body.loaded:before {
 
 .nav__menu.open {
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  visibility: visible;
+}
+
+.nav__menu.open .nav__links li {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.nav__menu.open article {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .nav__menu button .button--cross {
@@ -562,10 +609,55 @@ body.loaded:before {
   margin-bottom: 20px;
   font-family: "Spartan", sans-serif;
   font-weight: 700;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.nav__menu .nav__links li:nth-of-type(1) {
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.nav__menu .nav__links li:nth-of-type(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.nav__menu .nav__links li:nth-of-type(3) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.nav__menu .nav__links li:nth-of-type(4) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.nav__menu .nav__links li:nth-of-type(5) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.nav__menu article {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .nav__menu article:first-of-type {
   padding-bottom: 30px;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+.nav__menu article:last-of-type {
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
 }
 
 .nav__menu article h4 {
@@ -668,47 +760,31 @@ button .button--ham {
 
 @-webkit-keyframes zoomin {
   0% {
-    background-size: 100% 100%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    background-size: 120% 120%;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
-    background-size: 100% 100%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes zoomin {
   0% {
-    background-size: 100% 100%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    background-size: 120% 120%;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
-    background-size: 100% 100%;
-  }
-}
-
-@-webkit-keyframes swipe-home {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-  }
-}
-
-@keyframes swipe-home {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -1374,22 +1450,6 @@ footer a:hover {
   .wrapper {
     width: 80%;
   }
-  .contact-page .header--main {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/drew-beamer-Se7vVKzYxTI-unsplash.png");
-    background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/drew-beamer-Se7vVKzYxTI-unsplash.png");
-  }
-  .team-page .header--main {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/image000011.png");
-    background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image000011.png");
-  }
-  .projects-page .header--main {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/image00005.png");
-    background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image00005.png");
-  }
-  .services-page .header--main {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #002947), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/image00004.png");
-    background-image: linear-gradient(to bottom, #002947 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image00004.png");
-  }
   .nav .wrapper {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1406,8 +1466,7 @@ footer a:hover {
     display: none;
   }
   .nav__menu {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    visibility: visible;
     opacity: 1;
     position: static;
     padding: 0;
@@ -1434,14 +1493,23 @@ footer a:hover {
   }
   .nav__menu .nav__links li {
     font-size: 1.2rem;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     margin-bottom: 0px;
     padding-right: 30px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
   }
   .nav__menu .nav__links li:hover, .nav__menu .nav__links li:focus {
     color: #0086DD;
     text-decoration: underline;
+  }
+  .nav__menu .nav__links li:nth-of-type(1),
+  .nav__menu .nav__links li:nth-of-type(2),
+  .nav__menu .nav__links li:nth-of-type(3),
+  .nav__menu .nav__links li:nth-of-type(4),
+  .nav__menu .nav__links li:nth-of-type(5) {
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
   }
   .nav__menu .nav__links.scrollin li {
     color: #090B0D;

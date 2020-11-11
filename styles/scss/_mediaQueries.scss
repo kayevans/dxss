@@ -6,28 +6,6 @@
             width: 80%;
         }
 
-        //     HEADER STYLEs
-
-        // contact header
-        .contact-page .header--main{
-            background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/drew-beamer-Se7vVKzYxTI-unsplash.png');
-        }
-
-        // team header
-        .team-page .header--main{
-            background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image000011.png');
-        }
-
-        // projects header
-        .projects-page .header--main{
-            background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image00005.png');
-        }
-
-        // services header
-        .services-page .header--main{
-            background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image00004.png');
-        }
-
         // nav styles
         .nav {
 
@@ -51,7 +29,7 @@
         // show nav items
         .nav__menu{
             // display: block;
-            transform: scale(1);
+            visibility: visible;
             opacity: 1;
             position: static;
             padding: 0;
@@ -75,15 +53,25 @@
         
                 li{
                     font-size: 1.2rem;
+                    opacity: 1;
+                    transform: translateY(0);
                     margin-bottom: 0px;
                     padding-right: 30px;
-                    transition: all 0.5s ease;
+                    // transition: all 0.5s ease;
 
                     &:hover,
                     &:focus{
                         color: $primary;
                         text-decoration: underline;
                     }
+                }
+
+                li:nth-of-type(1),
+                li:nth-of-type(2),
+                li:nth-of-type(3),
+                li:nth-of-type(4),
+                li:nth-of-type(5){
+                    transition-delay: 0s;
                 }
 
                 &.scrollin li{

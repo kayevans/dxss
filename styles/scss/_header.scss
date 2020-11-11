@@ -3,52 +3,98 @@
     height: 100vh;
 }
 
+// services header
+.services-page .header--main,
+.projects-page .header--main,
+.contact-page .header--main,
+.team-page .header--main{
+    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5));
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    position: relative;
+
+    .image-container{
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        z-index: -2;
+
+        .image{
+            height: 100%;
+            background-image: url('../assets/image00004.png');
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            animation: zoomin 60s infinite forwards;
+        }
+    }
+}
+
 // contact header
 .contact-page .header--main{
-    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/room-mob.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: zoomin 60s infinite linear;
+    .image-container{
+        .image{
+            background-image: url('../assets/drew-beamer-Se7vVKzYxTI-unsplash.png');
+        }
+    }
 }
 
 // team header
 .team-page .header--main{
-    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/hotel-mob.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: zoomin 60s infinite linear;
+    .image-container{
+        .image{
+            background-image: url('../assets/image000011.png');
+        }
+    }
 }
 
 // projects header
 .projects-page .header--main{
-    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/roof-mob.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: zoomin 60s infinite linear;
+    .image-container{
+        .image{
+            background-image: url('../assets/image00005.png');
+        }
+    }
 }
 
-// services header
-.services-page .header--main{
-    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/basement-mob.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: zoomin 60s infinite linear;
-}
+
 
 // main styles for header
 .header--home{
-    // background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('../assets/image00001.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: zoomin 60s infinite linear;
+    background-image: linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5));
+    // animation: zoomin 60s infinite linear;
     position: relative;
-    z-index: 1;
-    // animation: swipe-home 2s ease;
+
+    .image-slides{
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+
+        li{
+            height: 100%;
+            background-image: url(./assets/image2.jpg);
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            
+            
+            &.swiper-slide-active{
+                animation: zoomin 60s infinite forwards;
+            }
+        }
+    }
+    // animation-delay: 5000ms;
 
     // &::before{
     //     content: '';
@@ -63,12 +109,6 @@
     //     background-color: $primary;
     //     z-index: -1;
     // }
-
-    // &.animated::before{
-    //     animation: swipe-home 1.5s forwards;
-    // }
-
-    // border-bottom: 40px solid $primary;
     &::after{
         content: '';
         height: 50px;
@@ -114,9 +154,14 @@
 // make menu none by default
 .nav__menu{
     // display: none;
+    // transform: scale(0);
     opacity: 0;
-    transform: scale(0);
-    transition: opacity 1s ease;
+    visibility: hidden;
+    // transition: opacity 0.5s ease;
+    transition-property: visibility, opacity;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
     padding: 0 12.5%;
     position: fixed;
     z-index: 10;
@@ -130,8 +175,23 @@
 
     &.open{
         // display: block;
+        // transform: scale(1);
         opacity: 1;
-        transform: scale(1);
+        visibility: visible;
+
+
+        .nav__links{
+    
+            li{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        article{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     button .button--cross{
@@ -164,14 +224,46 @@
             font-size: 2.4rem;
             margin-bottom: 20px;
             @include font(700);
+
+            opacity: 0;
+            transform: translateY(100%);
+            transition: all 0.5s ease;
+        }
+
+        li:nth-of-type(1){
+            transition-delay: 0;
+        }
+
+        li:nth-of-type(2){
+            transition-delay: 0.2s;
+        }
+
+        li:nth-of-type(3){
+            transition-delay: 0.4s;
+        }
+
+        li:nth-of-type(4){
+            transition-delay: 0.6s;
+        }
+
+        li:nth-of-type(5){
+            transition-delay: 0.8s;
         }
     }
 
     // sections of the nav links
     article{
+        opacity: 0;
+        transform: translateY(100%);
+        transition: all 0.5s ease;
 
         &:first-of-type{
             padding-bottom: 30px;
+            transition-delay: 1s;
+        }
+
+        &:last-of-type{
+            transition-delay: 1.2s;
         }
         
         h4{
@@ -195,29 +287,6 @@
 button .button--ham{
     padding: 10px;
 }
-// .nav--mobile{
-//     // position: fixed;
-//     // z-index: 20;
-//     // top: 23px;
-//     // right: 10%;
-
-//     // .button--ham{
-//     //     // padding: 10px;
-
-//     //     // span{
-//     //     //     display: block;
-//     //     //     line-height: 0;
-//     //     //     height: 2px;
-//     //     //     width: 18px;
-//     //     //     background-color: white;
-//     //     //     margin-bottom: 3px;
-
-//     //     //     &:last-of-type{
-//     //     //         margin-bottom: 0;
-//     //     //     }
-//     //     // }
-//     // }
-// }
 
 // nav title styles
 .header__title{
@@ -279,25 +348,17 @@ button .button--ham{
 
 @keyframes zoomin{
     0%{
-        background-size: 100% 100%;
+        transform: scale(1);
     }
 
     50%{
-        background-size: 120% 120%;
+        transform: scale(1.2);
     }
 
     100%{
-        background-size: 100% 100%;
+        transform: scale(1);
     }
 }
 
-// keyframe for the home transition between images
-@keyframes swipe-home{
-    0%{
-        transform: translate3d(0, 0, 0);
-    }
 
-    100%{
-        transform: translate3d(-100%, 0, 0);
-    }
-}
+

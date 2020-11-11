@@ -86,20 +86,38 @@ dxss.showGallery = function(){
 // function to change the background images
 dxss.changeImage = function(){
     // create a variable to store current image
-    let currentNum = Math.floor(Math.random() * dxss.headerImages.length);
-    // use the image to replace background image
-    $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${$(window).width() <= 768 ? dxss.mobImages[currentNum].path : dxss.headerImages[currentNum].path}')`);
-    setInterval(function(){
-        $('.header--home').css('background-image', `linear-gradient(to bottom, rgba(0, 41, 71, 1) 5%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url('./assets/${$(window).width() <= 768 ? dxss.mobImages[currentNum].path : dxss.headerImages[currentNum].path}')`);
-        // setTimeout(function () { 
-        //     $('.header--home').removeClass('animated');
-        // }, 1500);
-        currentNum === dxss.headerImages.length - 1 ? currentNum = 0 : currentNum++;
-        // $('.header--home').addClass('animated');
-        // setTimeout(function () { 
-        //     $('.header--home').removeClass('animated');
-        // }, 8000);
-    }, 8000);
+    function shuffle(array) {
+        let currentIndex = array.length, temporaryValue, randomIndex;
+      
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+      
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+      
+          // And swap it with the current element.
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+      
+        return array;
+    }
+
+    let newImages = shuffle(dxss.headerImages);
+    newImages.forEach(function(image){
+        // make new li
+        $('.image-slides .swiper-wrapper').append($('<li/>').addClass('swiper-slide').css('background-image', `url(./assets/${image.path})`));
+    })
+
+    var swiper = new Swiper('.image-slides', {
+        loop: true,
+        speed: 2000,
+        autoplay: {
+            delay: 5000,
+        },
+    });
 
 }
 
@@ -202,7 +220,9 @@ dxss.init = function(){
     dxss.changeTest();
 
     // call function for background images
-    dxss.changeImage();
+    if($('body').hasClass('home')){
+        dxss.changeImage();
+    }
 
     // MAP STUFFS
     // if contact page run following code 
@@ -306,6 +326,7 @@ dxss.init = function(){
             },
         })
     }
+    
 
     // when loaded add class of loaded to body for animation
     $('body').addClass('loaded');
