@@ -222,6 +222,9 @@ dxss.init = function(){
     // call function for background images
     if($('body').hasClass('home')){
         // dxss.changeImage();
+        if($(window).width() < 1000){
+            $('section.services').removeAttr('data-aos-delay');
+        }
     }
 
     // MAP STUFFS
