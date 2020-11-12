@@ -221,7 +221,7 @@ dxss.init = function(){
 
     // call function for background images
     if($('body').hasClass('home')){
-        dxss.changeImage();
+        // dxss.changeImage();
     }
 
     // MAP STUFFS

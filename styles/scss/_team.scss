@@ -18,7 +18,8 @@
 
     .team__picture{
         height: 340px;
-        width: 320px;
+        width: 100%;
+        max-width: 450px;
         position: relative;
         margin-bottom: 30px;
 

@@ -487,6 +487,13 @@ body.loaded:before {
   z-index: -2;
 }
 
+.header--home .image-slides video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header--home .image-slides li {
   height: 100%;
   background-image: url(./assets/image2.jpg);
@@ -796,6 +803,11 @@ button .button--ham {
   margin-bottom: -140px;
 }
 
+.services[data-aos-delay] {
+  -webkit-transition-delay: 0s !important;
+          transition-delay: 0s !important;
+}
+
 .services h2 {
   margin-bottom: 18px;
 }
@@ -874,6 +886,10 @@ button .button--ham {
 .testimonial__slide .testimonial__title {
   text-transform: uppercase;
   color: #0171BA;
+}
+
+.testimonial__slide .testimonials__titles {
+  width: 40%;
 }
 
 .testimonial__slide .testimonial__bottom {
@@ -1143,6 +1159,7 @@ button .button--ham {
 
 .projects__list .projects__gallery .close-gallery {
   position: absolute;
+  z-index: 100;
   top: 40px;
   right: 12.5%;
   padding: 10px;
@@ -1197,7 +1214,8 @@ button .button--ham {
 
 .team__members .team__picture {
   height: 340px;
-  width: 320px;
+  width: 100%;
+  max-width: 450px;
   position: relative;
   margin-bottom: 30px;
 }
@@ -1601,6 +1619,10 @@ footer a:hover {
   }
   .services ul li:nth-child(2) {
     margin: 0 20px;
+  }
+  .services[data-aos-delay] {
+    -webkit-transition-delay: 2.2s !important;
+            transition-delay: 2.2s !important;
   }
   .card {
     position: relative;

@@ -2,6 +2,10 @@
 
 // services section
 .services{
+    &[data-aos-delay]{
+        transition-delay: 0s !important;
+    }
+    
     text-align: center;
     position: relative;
     z-index: 2;
