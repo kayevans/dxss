@@ -223,7 +223,7 @@ dxss.init = function(){
     if($('body').hasClass('home')){
         // dxss.changeImage();
         if($(window).width() < 1000){
-            $('section.services').removeAttr('data-aos-delay');
+            $('section.services').removeAttr('data-aos data-aos-duration data-aos-delay');
         }
     }
 
