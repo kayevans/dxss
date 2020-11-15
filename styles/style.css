@@ -449,7 +449,7 @@ body.loaded:before {
 .contact-page .header--main .image-container .image,
 .team-page .header--main .image-container .image {
   height: 100%;
-  background-image: url("../assets/image00004.png");
+  background-image: url("../assets/image00004.jpg");
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -462,11 +462,11 @@ body.loaded:before {
 }
 
 .team-page .header--main .image-container .image {
-  background-image: url("../assets/image000011.png");
+  background-image: url("../assets/image000011.jpg");
 }
 
 .projects-page .header--main .image-container .image {
-  background-image: url("../assets/image00005.png");
+  background-image: url("../assets/image00005.jpg");
 }
 
 .header--home {
@@ -1118,6 +1118,41 @@ button .button--ham {
   font-weight: 700;
 }
 
+.projects__list .projects__project:nth-of-type(1) > button {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), to(#002947)), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/tdsb/61642681716__6F3C8578-364C-4AB3-8F8E-D4FCB0DF5FAB.jpeg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #002947 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/tdsb/61642681716__6F3C8578-364C-4AB3-8F8E-D4FCB0DF5FAB.jpeg");
+}
+
+.projects__list .projects__project:nth-of-type(2) > button {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), to(#002947)), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/mohawk/IMG_0680.jpeg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #002947 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/mohawk/IMG_0680.jpeg");
+}
+
+.projects__list .projects__project:nth-of-type(3) > button {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), to(#002947)), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/torontoems/IMG_0892.jpeg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #002947 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/torontoems/IMG_0892.jpeg");
+}
+
+.projects__list .projects__project:nth-of-type(4) > button {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), to(#002947)), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/sickkids/IMG_0409.jpeg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #002947 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/sickkids/IMG_0409.jpeg");
+}
+
+.projects__list .projects__project:nth-of-type(5) > button {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), to(#002947)), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/labworks/IMG_2761.jpeg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #002947 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/labworks/IMG_2761.jpeg");
+}
+
+.projects__list .projects__project:nth-of-type(6) > button {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), to(#002947)), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/hydroottawa/IMG_0405.jpeg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #002947 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/hydroottawa/IMG_0405.jpeg");
+}
+
+.projects__list .projects__project:nth-of-type(7) > button {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), to(#002947)), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/bdc/IMG_0981.jpeg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #002947 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/bdc/IMG_0981.jpeg");
+}
+
 .projects__list .projects__gallery {
   position: fixed;
   display: none;
@@ -1154,6 +1189,11 @@ button .button--ham {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: auto;
+}
+
+.projects__list .projects__gallery video {
+  max-width: 100%;
   height: auto;
 }
 
