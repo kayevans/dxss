@@ -28,7 +28,6 @@
 
         // show nav items
         .nav__menu{
-            // display: block;
             visibility: visible;
             opacity: 1;
             position: static;
@@ -57,7 +56,6 @@
                     transform: translateY(0);
                     margin-bottom: 0px;
                     padding-right: 30px;
-                    // transition: all 0.5s ease;
 
                     &:hover,
                     &:focus{
@@ -616,7 +614,6 @@
         &.callout--right{
             flex-direction: row;
             margin-left: 20%;
-            // overflow-x: hidden;
             width: 80%;
             
         }

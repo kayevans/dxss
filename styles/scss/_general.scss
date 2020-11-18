@@ -120,15 +120,12 @@ body:before{
     height: 100%;
     background-color: $primary;
     z-index: 1000;
-    // transform: translateX(0);
-    // transition: all 1s ease;
     
 
     
 }
 
 body.loaded:before{
-        // transform: translateX(-100%);
         animation: swipe 1.5s forwards;
 }
 
