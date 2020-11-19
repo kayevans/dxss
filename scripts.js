@@ -190,6 +190,10 @@ dxss.changeTest = function(){
 // my init function
 dxss.init = function(){
 
+    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0){
+        $('body').addClass('safari');   
+    } 
+
     // function to show and hide the nav
     $('.button--ham').on('click', function(){
         $('.nav__menu').addClass('open');

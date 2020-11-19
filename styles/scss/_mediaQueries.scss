@@ -1,6 +1,11 @@
 // media queries for the site
 @media screen and (min-width: 1000px){
 
+    // REMVOE TRANSFORM ON SAFARI
+        body.safari .projects__project > button:hover{
+            transform: scale(1.05);
+        }
+
         //      GENERAL STYLES
         .wrapper{
             width: 80%;

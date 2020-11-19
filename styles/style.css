@@ -1499,6 +1499,10 @@ footer a:hover {
 }
 
 @media screen and (min-width: 1000px) {
+  body.safari .projects__project > button:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
   .wrapper {
     width: 80%;
   }
