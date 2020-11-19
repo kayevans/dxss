@@ -1007,6 +1007,7 @@ button .button--ham {
 
 .intro p {
   line-height: 2.4;
+  margin-bottom: 10px;
 }
 
 .intro--light {
@@ -1152,8 +1153,8 @@ button .button--ham {
 }
 
 .projects__list .projects__project:nth-of-type(7) > button {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), to(#002947)), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/bdc/IMG_0981.jpeg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #002947 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/bdc/IMG_0981.jpeg");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(0, 0, 0, 0)), color-stop(70%, rgba(0, 0, 0, 0)), to(#002947)), -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/bdc/IMG_1765.JPG");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 70%, #002947 100%), linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/bdc/IMG_1765.JPG");
 }
 
 .projects__list .projects__gallery {
@@ -1790,7 +1791,7 @@ footer a:hover {
   .intro .wrapper h2 {
     width: 40%;
   }
-  .intro .wrapper p {
+  .intro .wrapper .written {
     width: 40%;
   }
   .projects__list ul.projects__buttons {
