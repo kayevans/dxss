@@ -6,146 +6,6 @@
             width: 80%;
         }
 
-        // nav styles
-        .nav {
-
-            .wrapper{
-                justify-content: flex-start;
-                align-items: center;
-                position: relative;
-
-            }
-
-            .logo{
-                margin-right: 2%;
-            }
-        }
-
-        // hide ham button
-        .nav--mobile{
-            display: none;
-        }
-
-        // show nav items
-        .nav__menu{
-            visibility: visible;
-            opacity: 1;
-            position: static;
-            padding: 0;
-            height: auto;
-            z-index: auto;
-            background-color: transparent;
-
-            .logo, article{
-                display: none;
-            }
-
-            button{
-                display: none;
-                visibility: hidden;
-            }
-
-            .nav__links{
-                padding: 0;
-                display: flex;
-                flex-direction: row;
-        
-                li{
-                    font-size: 1.2rem;
-                    opacity: 1;
-                    transform: translateY(0);
-                    margin-bottom: 0px;
-                    padding-right: 30px;
-
-                    &:hover,
-                    &:focus{
-                        color: $primary;
-                        text-decoration: underline;
-                    }
-                }
-
-                li:nth-of-type(1),
-                li:nth-of-type(2),
-                li:nth-of-type(3),
-                li:nth-of-type(4),
-                li:nth-of-type(5){
-                    transition-delay: 0s;
-                }
-
-                &.scrollin li{
-                    color: $fontMain;
-
-                    &:hover,
-                    &:focus{
-                        color: $primary;
-                        text-decoration: underline;
-                    }
-                }
-
-                &.scrollin li.activePage, li.activePage{
-                    color: $primary;
-                    text-decoration: underline;
-
-                    
-                }
-            }
-        }
-
-            // button call styles
-        .button--call{
-            display: block;
-            color: white;
-            position: absolute;
-            top: -23px;
-            right: 0;
-            width: 170px;
-            text-align: center;
-            @include font(700);
-            background-color: $primary;
-            padding: 14px 30px;
-            overflow: hidden;
-            z-index: 1;
-
-            p{
-                font-size: 1.2rem;
-            }
-
-            a{
-                letter-spacing: 1.6px;
-                padding: 10px 0;
-            }
-
-            &.scrollin{
-                top: -2.5px;
-                line-height: 1;
-
-                p:first-child{
-                    display: none;
-                }
-                
-            }
-
-            &:before{
-                content: '';
-                width: calc(100% + 40px);
-                height: 100%;
-                display: block;
-                background-color: $secondary;
-                transform: skew(-20deg);
-                position: absolute;
-                top: 0;
-                left: calc(-100% - 60px);  
-                transition: all 0.2s ease;
-                z-index: -1;
-            }
-
-            &:hover::before,
-            &:focus::before{
-                left: -20px;
-            }
-            
-        }
-
         
         // main header
         .header__title{
@@ -552,6 +412,149 @@
             
         }
 
+}
+
+
+@media screen and (min-width: 1140px){
+            // nav styles
+            .nav {
+
+                .wrapper{
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: relative;
+    
+                }
+    
+                .logo{
+                    margin-right: 2%;
+                }
+            }
+    
+            // hide ham button
+            .nav--mobile{
+                display: none;
+            }
+    
+            // show nav items
+            .nav__menu{
+                visibility: visible;
+                opacity: 1;
+                position: static;
+                padding: 0;
+                height: auto;
+                z-index: auto;
+                background-color: transparent;
+    
+                .logo, article{
+                    display: none;
+                }
+    
+                button{
+                    display: none;
+                    visibility: hidden;
+                }
+    
+                .nav__links{
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+            
+                    li{
+                        font-size: 1.6rem;
+                        opacity: 1;
+                        transform: translateY(0);
+                        margin-bottom: 0px;
+                        padding-right: 30px;
+    
+                        &:hover,
+                        &:focus{
+                            color: $primary;
+                            text-decoration: underline;
+                        }
+                    }
+    
+                    li:nth-of-type(1),
+                    li:nth-of-type(2),
+                    li:nth-of-type(3),
+                    li:nth-of-type(4),
+                    li:nth-of-type(5){
+                        transition-delay: 0s;
+                    }
+    
+                    &.scrollin li{
+                        color: $fontMain;
+    
+                        &:hover,
+                        &:focus{
+                            color: $primary;
+                            text-decoration: underline;
+                        }
+                    }
+    
+                    &.scrollin li.activePage, li.activePage{
+                        color: $primary;
+                        text-decoration: underline;
+    
+                        
+                    }
+                }
+            }
+    
+                // button call styles
+            .button--call{
+                display: block;
+                color: white;
+                position: absolute;
+                top: -23px;
+                right: 0;
+                width: 170px;
+                text-align: center;
+                @include font(700);
+                background-color: $primary;
+                padding: 14px 30px;
+                overflow: hidden;
+                z-index: 1;
+    
+                p{
+                    font-size: 1.2rem;
+                }
+    
+                a{
+                    letter-spacing: 1.6px;
+                    padding: 10px 0;
+                }
+    
+                &.scrollin{
+                    top: -2.5px;
+                    line-height: 1;
+    
+                    p:first-child{
+                        display: none;
+                    }
+                    
+                }
+    
+                &:before{
+                    content: '';
+                    width: calc(100% + 40px);
+                    height: 100%;
+                    display: block;
+                    background-color: $secondary;
+                    transform: skew(-20deg);
+                    position: absolute;
+                    top: 0;
+                    left: calc(-100% - 60px);  
+                    transition: all 0.2s ease;
+                    z-index: -1;
+                }
+    
+                &:hover::before,
+                &:focus::before{
+                    left: -20px;
+                }
+                
+            }
 }
 
 @media screen and (min-width: 1280px){
