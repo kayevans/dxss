@@ -458,7 +458,7 @@ body.loaded:before {
 }
 
 .contact-page .header--main .image-container .image {
-  background-image: url("../assets/drew-beamer-Se7vVKzYxTI-unsplash.png");
+  background-image: url("../assets/image00001.png");
 }
 
 .team-page .header--main .image-container .image {
@@ -1428,8 +1428,8 @@ button .button--ham {
 }
 
 .contact-page .callout .callout__image {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/image3.jpg");
-  background-image: linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/image3.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(53, 115, 162, 0.5)), to(rgba(53, 115, 162, 0.5))), url("../assets/24-hour-service.png");
+  background-image: linear-gradient(to right, rgba(53, 115, 162, 0.5), rgba(53, 115, 162, 0.5)), url("../assets/24-hour-service.png");
 }
 
 .contact__map {
