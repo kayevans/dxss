@@ -29,15 +29,15 @@
             object-fit: cover;
         }
 
-        &::after{
-            content: '';
-            height: 100%;
-            width: 60px;
-            background-color: $primary;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
+        // &::after{
+        //     content: '';
+        //     height: 100%;
+        //     width: 60px;
+        //     background-color: $primary;
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        // }
     }
 
     .team__content{
