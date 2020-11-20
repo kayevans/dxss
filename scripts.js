@@ -247,6 +247,8 @@ dxss.init = function(){
         }).setLngLat([-79.701690, 43.761550]).addTo(map);
 
         map.addControl(new mapboxgl.NavigationControl());
+
+        map.scrollZoom.disable();
     }
 
     // SLIDERS 
