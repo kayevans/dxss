@@ -56,7 +56,7 @@ dxss.testimonials = [
     {
         name: "DELANO",
         company: "VERTIV CANADA",
-        testimonial: "DX Systems Solutions Inc. and Vertiv (Liebert) have enjoyed a close working relationship for several years. We recognize DX Systems Solutions as having met all the current requirements and commitments to earn the designation as a Vertiv (Liebert) Factory Trained Service Provider."
+        testimonial: "DX Systems Solutions Inc. and Vertiv (Liebert) have enjoyed a close working relationship for several years. We recognize DX Systems Solutions as having all the expertise and knowledge required to be trusted upon in mission critical environments."
     },
     {
         name: "MATISON",
