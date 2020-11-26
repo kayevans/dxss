@@ -44,14 +44,18 @@
             margin-bottom: 20px;
             line-height: 2.14;
         }
-    }
-
-    .team__member:first-of-type{
-        margin-bottom: 45px;
 
         p:last-of-type{
             @include font(700);
         }
     }
+
+    .team__member:first-of-type{
+        margin-bottom: 45px;
+
+        
+    }
+
+    
     
 }

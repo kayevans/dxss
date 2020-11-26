@@ -1285,13 +1285,13 @@ button .button--ham {
   line-height: 2.14;
 }
 
-.team__members .team__member:first-of-type {
-  margin-bottom: 45px;
-}
-
-.team__members .team__member:first-of-type p:last-of-type {
+.team__members .team__content p:last-of-type {
   font-family: "Spartan", sans-serif;
   font-weight: 700;
+}
+
+.team__members .team__member:first-of-type {
+  margin-bottom: 45px;
 }
 
 .contact__form {
