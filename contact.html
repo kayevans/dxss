@@ -135,7 +135,7 @@
         <div class="wrapper" >
             <section class="contact__form">
                 <h2>Get a <span>free</span> quote</h2>
-                <form action="POST">
+                <form id="contact-form" method="POST">
                     <div class="contact__wrap">
                         <div class="input__wrapper">
                             <input type="text" name="fullname" id="name" required placeholder="Full name">
@@ -163,7 +163,7 @@
                         </div>
                         
                         <div class="input__wrapper"> 
-                            <input type="text" name="service" id="service" required placeholder="How can we help?">
+                            <input type="text" name="message" id="message" required placeholder="How can we help?">
                             <label for="message">How can we help?</label>
                         </div>
                     </div>
@@ -275,6 +275,8 @@
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     <!-- ANIMATE ON SCROLL JS LIB -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- sweet alerts -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- my js -->
     <script src="./scripts.js"></script>
 </body>

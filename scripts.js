@@ -186,6 +186,34 @@ dxss.changeTest = function(){
     });
 };
 
+// make function that sends the message to formspree
+dxss.sendMessage = function(){
+    $.ajax({
+            url: `https://formspree.io/f/mrgoapal`,
+            method: 'POST',
+            data: {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                phone: $('#phone').val(),
+                address: $('#address').val(), 
+                service: $('#service').val(),
+                message: $('#message').val()
+            },
+            dataType: 'json'
+        }).then(function(){
+
+        // show an alert
+        swal({
+            title: 'Thank you!',
+            text: 'Your response was submitted.',
+            button: 'Ok',
+        })
+
+        // clear the form
+        document.getElementById("contact-form").reset();
+    });
+}
+
 
 // my init function
 dxss.init = function(){
@@ -249,6 +277,18 @@ dxss.init = function(){
         map.addControl(new mapboxgl.NavigationControl());
 
         map.scrollZoom.disable();
+
+        // on submit, send message
+        $('#contact-form').on('submit', function(e){
+            e.preventDefault();
+
+            // call function to send message
+            dxss.sendMessage();
+
+        })
+
+
+
     }
 
     // SLIDERS 

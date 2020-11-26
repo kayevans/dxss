@@ -1438,6 +1438,40 @@ button .button--ham {
   margin-bottom: -200px;
 }
 
+.swal-title {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 3.4rem;
+  color: #090B0D;
+}
+
+.swal-text,
+.swal-button {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+}
+
+.swal-button {
+  background-color: #00192A;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 137px;
+  padding: 18px 0;
+  border-radius: 0;
+}
+
+.swal-footer {
+  text-align: center;
+}
+
+.swal-button:not([disabled]):hover,
+.swal-button:not([disabled]):focus {
+  background-color: #0086DD;
+}
+
 footer a {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;

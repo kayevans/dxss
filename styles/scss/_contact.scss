@@ -128,3 +128,38 @@
     top: -200px;
     margin-bottom: -200px;
 }
+
+// popup styles
+// title styles
+.swal-title{
+    @include font(700);
+    font-size: 3.4rem;
+    color: $fontMain;
+}
+
+// text styles
+.swal-text,
+.swal-button{
+    @include font(500);
+}
+
+//  button styles
+.swal-button{
+    background-color: $secondary;
+    @include font(700);
+    color: $fontWhite;
+    transition: all 0.5s ease;
+    width: 137px;
+    padding: 18px 0;
+    border-radius: 0;
+}
+
+.swal-footer{
+    text-align: center;
+}
+
+// buttons styles
+.swal-button:not([disabled]):hover,
+.swal-button:not([disabled]):focus{
+    background-color: $primary;
+}
